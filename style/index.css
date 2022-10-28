@@ -173,8 +173,8 @@ p, a {
 }
 .btn_whyChoice {
   padding: 5px;
-  font-size: 2vw;
-  max-width: 38vw;
+  font-size: 4vw;
+  width: 271px;
   font-weight: 500;
   background-color: #ffffff;
   color: #ff6f16;
@@ -505,9 +505,15 @@ margin-left: 40px;
   .hide {
     display: inline-block;
   }
-  .btn_whyChoice img {
-    max-width: 30px;
+  .btn_whyChoice {
+
+    font-size: 2vw;
+    width: 38vw;
+
   }
+  /* .btn_whyChoice img {
+    max-width: 30px;
+  } */
   .logoTable {
     max-width: 12vh;
   }
