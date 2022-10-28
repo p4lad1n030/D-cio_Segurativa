@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script src="https://kit.fontawesome.com/d88fbfa2f1.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segurativa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/seguroVida.css">
+</head>
+<body>
+  <header class="">
+    <nav class="navbar navheight navbar-expand-lg navbar-light d-flex justify-content-around p-xl-2">
+      <!-- Brand -->
+        <a href="./index.html" class=""><img class="navbar-brand logo" src="./assets/img/Light logotipo segurativa.png" alt=""></a>
+        <!-- aqui é redirecionado para o whatssap -->
+        <a href="#" class="text-decoration-none"><button type="button" class="btn btn-nav hide" >Simule Gratis, Clique Aqui</button></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleLife">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse  text-center" id="collapsibleLife" >
+          
+          <ul class="navbar-nav mx-auto" >
+            <div class=" row mt-sm-4 ">
+              <li class="nav-item align-self-center col">
+                <a class="nav-link " href="#"><div class=""><img class="icons_nav" src="./assets/icons/icon car.png"><p class="icon_p" alt="icone de um carro">Auto</p></div></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="#"><img class="icons_nav" src="./assets/icons/icon motorcycle.png"><p class="icon_p" alt="imagem de uma moto">Moto</p></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="#"><img class="icons_nav" src="./assets/icons/icon life.png"><p class="icon_p" alt="imagem de um coração">Vida</p></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="#"><img class="icons_nav" src="./assets/icons/icon house.png"><p class="icon_p" alt="imagem de uma casa ">Casa</p></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="#"><img class="icons_nav" src="./assets/icons/icon service.png"><p class="icon_p_services" alt="imagem de ferramentas">Serviços</p></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <!-- aqui vai pro whatssap -->
+        <a href="#" class="text-decoration-none"><button type="button" class="btn btn-nav hide-mobile">Simule Gratis, Clique Aqui</button></a>
+    </nav>
+
+    
+    <div class="bg_angular d-flex ">
+      <div class="row mx-auto">
+        <div class="col-md">
+          <div class="text-center">
+            <h1 class="display-3 font-weight-bold title_header">Seguro de Vida</h1>
+            <h4 class="text-light">Segurança para sua família, tranquilidade para você.</h4>
+            <!-- aqui vai pro whatss -->
+            <a href="#" class="">
+            <button class="bg-warning btn" type="button">FALE CONOSCO</button></a>
+            <div class="d-flex flex-wrap justify-content-around align-content-around mt-4">
+              <div class="card_header">
+                <img src="./assets/companies/portoSeguro.png" alt="" class="img_header"></div>
+              <div class="card_header">
+                <img src="./assets/companies/allianz.png" alt="" class="img_header"></div>
+              <div class="card_header">
+                <img src="./assets/companies/tokioMarine.png" alt="" class="img_header"></div>
+              <div class="card_header">
+                <img src="./assets/companies/sompo.png" alt="" class="img_header"></div>
+              <div class="card_header">
+                <img src="./assets/companies/mapfre.png" alt="" class="img_header"></div>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="d-flex flex-column form mx-auto">
+            <p class="text-warning text-center mb-n2 mt-3">Simular</p>
+            <h3 class="text-center form_title">Seguro de Vida</h3>
+            <p class="text-center text-light">Conte um pouco sobre você</p>
+            <label for="name" class="mr-auto text-light mb-0">Nome</label>
+            <input id="name" type="text" class="">
+            <label for="name" class="mr-auto text-light mb-0">E-mail</label>
+            <input id="email" type="email" class="">
+            <label for="name" class="mr-auto text-light mb-0">Telefone</label>
+            <input id="phone" type="tel" class="">
+            <button class="btn btn-outline-warning mt-4 text-white" type="button">Enviar</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+  <section class="mt-3">
+      <h2 class="text-center">Personalize seu Seguro</h2>
+      <h5 class="text-center">Responda as questões abaixo para simular sua cotação</h5>    
+    <div class=" row  mx-auto text-center">
+      <div class="col d-flex flex-column">
+<!-- <form action="" class=""> -->
+  <!-- idade -->
+          <div class="options_safe">
+            <!-- <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#ageModal"></i> -->
+            <!-- The Modal -->
+            <div class="modal" id="ageModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Modal body..Age
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+              <h4 class="">
+                <label for="age" class="">Qual a sua idade?</label> </h4>
+                <div class="container_choice">
+                  <i class='far fa-calendar-alt icon_form'></i>
+                  <input id="ageRange" type="range" class="age_range" value="18" min="18" max="70" oninput="rangeAge(this.value)" step="1"> <br>
+                  <span class="font-weight-bolder h2" id="numberAge">18</span><small class="font-weight-bold"> Anos</small>
+  
+                </div>
+  
+          </div>
+  <!-- genero -->
+          <div class="options_safe">
+            <!-- <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#genderModal"></i> -->
+            <!-- The Modal -->
+            <div class="modal" id="genderModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Modal body.. genderModal
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Qual o seu sexo?</h4>
+            <div class="container_choice  ">
+              <span class="gender">
+                <i class='fas fa-venus-mars icon_form '></i>
+                <label for="masc" class=" btn btn-outline-primary ">Masculino<input id="masc" type="radio" class="ml-1" name="radSex" checked></label>
+                <label for="fem" class="btn btn-outline-primary ">Feminino<input id="fem" type="radio" class="ml-1" name="radSex"></label>
+              </span>
+            </div>
+          </div>
+  <!-- smoking -->
+          <div class="options_safe">
+            <!-- <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#smokModal"></i> -->
+            <!-- The Modal -->
+            <div class="modal" id="smokModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Modal body..smokModal
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Você é fumante? </h4>
+  
+            <span class="gender">
+              <i class='fas fa-smoking icon_form'></i>
+              <label for="smokno" class="mx-2 btn btn-outline-primary">Não<input id="smokno" type="radio" class="ml-1" name="radsmok" checked></label>
+              <label for="smoksim" class="btn btn-outline-primary">Sim<input id="smoksim" type="radio" class="ml-1" name="radsmok"></label>
+            </span>
+          </div>
+  <!-- profession -->
+          <div class="options_safe">
+            <!-- <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#professionModal"></i> -->
+            <!-- The Modal -->
+            <div class="modal" id="professionModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Modal body..professionModal
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+            <h4 class="">Qual a sua profissão?</h4>
+            
+            <div class="options_safe">
+              <i class='fas fa-toolbox icon_form'></i>
+              <input type="text" class="age_range" name="inJob" id="job" list="jobs" aria-label="jobss">
+              <!-- abaixo foi abreviadoo datalist -->
+              <datalist id="jobs">
+                <option value="Escolha sua profissão" selected></option>
+                <option value="Abatedor">Abatedor</option>
+                <option value="açougueiro">açougueiro</option>
+                <option value="açougueiro">açougueiro</option>
+                <option value="açougueiro">açougueiro</option>
+                <option value="acupunturista">acupunturista</option>
+                <option value="adestrador de animais">adestrador de animais</option>
+                <option value="administrador de empresas">administrador de empresas</option>
+                <option value="administrador hospitalar">administrador hospitalar</option>
+                <option value="advogado">advogado</option>
+                <option value="agenciador de propaganda">agenciador de propaganda</option>
+                <option value="agenciador e produtor de seguros">agenciador e produtor de seguros</option>
+                <option value="agente de inteligencia">agente de inteligencia</option>
+                <option value="agente de saúde">agente de saúde</option>
+                <option value="agente de viagem">agente de viagem</option>
+                <option value="agente de fiscal">agente de fiscal</option>
+                <option value="agente funerário">agente funerário</option>
+                <option value="ajudante de motorista">ajudante de motorista</option>
+                <option value="ajustador ferramenteiro">ajustador ferramenteiro</option>
+                <option value="ajustador mecanico">ajustador mecanico</option>
+                <option value="ajustador naval">ajustador naval</option>
+                <option value="alfaiate">alfaiate</option>
+                <option value="almoxarife">almoxarife</option>
+                <option value="analista administrativo">analista administrativo</option>
+                <option value="analista de recursos humanos">analista de recursos humanos</option>
+                <option value="analistas de sistemas">analistas de sistemas</option>
+                <option value="analistas, assistente ou tecnico da area financeira">analistas, assistente ou tecnico da area financeira</option>
+                <option value="ancora de radio ou televisao">ancora de radio ou televisao</option>
+                <option value="antropologo">antropologo</option>
+                <option value="apicultor">apicultor</option>
+                <option value="apontador de mao de obra">apontador de mao de obra</option>
+                <option value="apontador de produção">apontador de produção</option>
+                <option value="aposentado (por invalidez-acidente">aposentado (por invalidez-acidente)</option>
+                <option value="aposentado (por invalidez-doença">aposentado (por invalidez-doença)</option>
+                <option value="aposentado (por tempo de serviço)">aposentado (por tempo de serviço)</option>
+                <option value="apresentador">apresentador</option>
+                <option value="arbitro esportivo">arbitro esportivo</option>
+                <option value="armazenista">armazenista</option>
+                <option value="aromista">aromista</option>
+                <option value="arqueologo">arqueologo</option>
+                <option value="arquiteto">arquiteto</option>
+                <option value="arquivista">arquivista</option>
+                <option value="artesao">artesao</option>
+                <option value="artista plastico">artista plastico</option>
+                <option value="ascensorista">ascensorista</option>
+                <option value="assessor de imprensa">assessor de imprensa</option>
+                <option value="assessor de imprensa">assessor de imprensa</option>
+                <option value="assessor ou assistente parlamentar">assessor ou assistente parlamentar</option>
+                <option value="assistente administrativo"> assistente administrativo</option>
+                <option value="assistente comercial">assistente comercial</option>
+                <option value="assistente social">assistente social</option>
+                <option value="astrologo">astrologo</option>
+                <option value="astronomo">astronomo</option>
+                <option value="atendente de judiciario">atendente de judiciario</option>
+                <option value="atendente ou balconista">atendente ou balconista</option>
+                <option value="atleta profissional">atleta profissional</option>
+                <option value="ator">ator</option>
+                <option value="atuario">atuario</option>
+                <option value="auditor">auditor</option>
+                <option value="auditor fiscal publico">auditor fiscal publico</option>
+                <option value="autor ou roteirista">autor ou roteirista</option>
+                <option value="auxiliar adminstrativo">auxiliar adminstrativo</option>
+                <option value="auxiliar de manutençao predial">auxiliar de manutençao predial</option>
+                <option value="auxiliar de serviços de biblioteca, documentaçao ou correio">auxiliar de serviços de biblioteca, documentaçao ou correio</option>
+                <option value="auxiliar de supervisor escolar">auxiliar de supervisor escolar</option>
+                <option value="auxiliar de veterinario">auxiliar de veterinario</option>
+                <option value="auxiliar do judiciario">auxiliar do judiciario</option>
+                <option value="auxiliar ou tecnico da extraçao florestal">auxiliar ou tecnico da extraçao florestal</option>
+                <option value="auxiliar ou tecnico da industruia de papel ou papelão">auxiliar ou tecnico da industruia de papel ou papelão</option>
+                <option value="auxiliar ou tecnico da industruia  metalurgica">auxiliar ou tecnico da industruia metalurgica</option>
+                <option value="auxiliar ou tecnico da industruia  metalurgica">auxiliar ou tecnico de enfermagem</option>
+                <option value="auxiliar ou tecnico na construção civil">auxiliar ou tecnico na construção civil</option>
+                <option value="auxiliar ou tecnico na construção civil">auxiliar ou tecnico na construção civil</option>
+                <option value="auxiliar ou tecnico na extraçao mineral">auxiliar ou tecnico na extraçao mineral</option>
+                <option value="auxiliar ou tecnico na extraçao mineral">auxiliar ou tecnico na extraçao mineral</option>
+                <option value="auxiliar ou tecnico na extraçao mineral">auxiliar ou tecnico na indestria de alimentos ou bebida</option>
+                <option value="auxiliar ou tecnico nos serviços de saude">auxiliar ou tecnico nos serviços de saude</option>
+                <option value="avaliador de bens">avaliador de bens</option>
+                <option value="avicultor">avicultor</option>
+                <option value="baba">baba</option>
+                <option value="bailarino">bailarino</option>
+                <option value="balanceiro">balanceiro</option>
+                <option value="barbeiro">barbeiro</option>
+                <option value="barista">barista</option>
+                <option value="barman">barman</option>
+                <option value="bibliotecario">bibliotecario</option>
+                <option value="biologo">biologo</option>
+                <option value="biomedico">biomedico</option>
+                <option value="bioquimico">bioquimico</option>
+                <option value="boiadeiro">boiadeiro</option>
+                <option value="bombeiros: comandante, coronel, tenente, major, capitao, subtenente">bombeiros: comandante, coronel, tenente, major, capitao, subtenente</option>
+                <option value="borracheiro">borracheiro</option>
+                <option value="britador">britador</option>
+                <option value="cabeleireiro">cabeleireiro</option>
+                <option value="camareiro">camareiro</option>
+                <option value="cantor">cantor</option>
+                <option value="carpinteiro">carpinteiro</option>
+                <option value="carregador">carregador</option>
+                <option value="carteiro">carteiro</option>
+                <option value="caseiro">caseiro</option>
+                <option value="cavouqueiro">cavouqueiro</option>
+                <option value="cenografo">cenografo</option>
+                <option value="ceramista">ceramista</option>
+                <option value="cerimonialista">cerimonialista</option>
+                <option value="chapeador">chapeador</option>
+                <option value="chapeleiro">chapeleiro</option>
+                <option value="chaveiro">chaveiro</option>
+                <option value="chefe de bar">chefe de bar</option>
+                <option value="chefe de confeitaria">chefe de confeitaria</option>
+                <option value="chefe de cozinha">chefe de cozinha</option>
+                <option value="churrasqueiro">churrasqueiro</option>
+                <option value="cientista politico">cientista politico</option>
+                <option value="cobrador de transporte coletivo">cobrador de transporte coletivo</option>
+                <option value="comentarista de radio e televisao">comentarista de radio e televisao</option>
+                <option value="comerciante">comerciante</option>
+                <option value="comissario ou aeromoça">comissario ou aeromoça</option>
+                <option value="compositor">compositor</option>
+                <option value="comprador">comprador</option>
+                <option value="comunicologo">comunicologo</option>
+                <option value="condutor de maquinas">condutor de maquinas</option>
+                <option value="confeccionador de produtos de papel ou papelao">confeccionador de produtos de papel ou papelao</option>
+                <option value="confeiteiro">confeiteiro</option>
+                <option value="conferente de carga e descarga">conferente de carga e descarga</option>
+                <option value="conselheiro tutelar">conselheiro tutelar</option>
+                <option value="consultor juridico">consultor juridico</option>
+                <option value="contador, tecnico ou analista em contabilidade">contador, tecnico ou analista em contabilidade</option>
+                <option value="continuo">continuo</option>
+                <option value="contorcionista">contorcionista</option>
+                <option value="controlador de trafego aereo">controlador de trafego aereo</option>
+                <option value="coordenador pedagogico">coordenador pedagogico</option>
+                <option value="copeiro">copeiro</option>
+                <option value="coreografo">coreografo</option>
+                <option value="corretor de bolsa de mercadorias e valores">corretor de bolsa de mercadorias e valores</option>
+                <option value="corretor de imoveis">corretor de imoveis</option>
+                <option value="corretor de seguros">corretor de seguros</option>
+                <option value="costureira">costureira</option>
+                <option value="coveiro ou sepultador">coveiro ou sepultador</option>
+                <option value="cozinheiro ou auxiliar de cozinha">cozinheiro ou auxiliar de cozinha</option>
+                <option value="choqueiro">choqueiro</option>
+                <option value="cuidador">cuidador</option>
+                <option value="cumim">cumim</option>
+                <option value="dançarino">dançarino</option>
+                <option value="datilografo">datilografo</option>
+                <option value="decorador">decorador</option>
+                <option value="defensor publico">defensor publico</option>
+                <option value="degustador">degustador</option>
+                <option value="demolidor de edificaçoes">demolidor de edificaçoes</option>
+                <option value="dentista">dentista</option>
+                <option value="deputado">deputado</option>
+                <option value="desenhista">desenhista</option>
+                <option value="desenhista industrial">desenhista industrial</option>
+                <option value="desenhista projetista">desenhista projetista</option>
+                <option value="desenhista tecnico">desenhista tecnico</option>
+                <option value="designer">designer</option>
+                <option value="despachante">despachante</option>
+                <option value="detetive profissional">detetive profissional</option>
+                <option value="digitador">digitador</option>
+                <option value="diretor de cinema">diretor de cinema</option>
+                <option value="diretor de empresa">diretor de empresa</option>
+                <option value="diretor de fotografo">diretor de fotografo</option>
+                <option value="diretor de instituiçao educacional">diretor de instituiçao educacional</option>
+                <option value="diretor de radio">diretor de radio</option>
+                <option value="diretor de televisao">diretor de televisao</option>
+                <option value="diretor teatral">diretor teatral</option>
+                <option value="dirigente de orgao publico">dirigente de orgao publico</option>
+                <option value="dirigente de partido politico">dirigente de partido politico</option>
+                <option value="dirigente de partido politico, sindicato ou cooperativa">dirigente de partido politico, sindicato ou cooperativa</option>
+                <option value="dj (disck jokey)">dj (disck jokey)</option>
+                <option value="do lar">do lar</option>
+                <option value="domador de animais">domador de animais</option>
+                <option value="doula">doula</option>
+                <option value="economista">economista</option>
+                <option value="editor">editor</option>
+                <option value="eletricista de instalaçoes e manutençao">eletricista de instalaçoes e manutençao</option>
+                <option value="embaixador, diplomata ou consul">embaixador, diplomata ou consul</option>
+                <option value="embalador ou alimentador de produçao">embalador ou alimentador de produçao</option>
+                <option value="embalsamador">embalsamador</option>
+                <option value="empregado domestico">empregado domestico</option>
+                <option value="empresario">empresario</option>
+                <option value="encanador">encanador</option>
+                <option value="enfermeiro">enfermeiro</option>
+                <option value="engenheiro de minas, florestal, agronomo e nuclear">engenheiro de minas, florestal, agronomo e nuclear</option>
+                <option value="engraxate">engraxate</option>
+                <option value="enologo">enologo</option>
+                <option value="entrevistador">entrevistador</option>
+                <option value="equilibrista">equilibrista</option>
+                <option value="escrevente">escrevente</option>
+                <option value="escritor">escritor</option>
+                <option value="escrivao, exceto policial civil">escrivao, exceto policial civil</option>
+                <option value="escultor">escultor</option>
+                <option value="especialista em metereologia">especialista em metereologia</option>
+                <option value="estagiario, bolsista ou trainee">estagiario, bolsista ou trainee</option>
+                <option value="estatistico">estatistico</option>
+                <option value="esteticista">esteticista</option>
+                <option value="estilista">estilista</option>
+                <option value="estivador">estivador</option>
+                <option value="estofador">estofador</option>
+                <option value="estoquista">estoquista</option>
+                <option value="estudante">estudante</option>
+                <option value="extrator">extrator</option>
+                <option value="farmaceutico">farmaceutico</option>
+                <option value="faxineiro">faxineiro</option>
+                <option value="feirante">feirante</option>
+                <option value="filologo">filologo</option>
+                <option value="filosofo">filosofo</option>
+                <option value="fiscal de tranportes coletivos">fiscal de tranportes coletivos</option>
+                <option value="fisico">fisico</option>
+                <option value="fisioterapeuta">fisioterapeuta</option>
+                <option value="foguista">foguista</option>
+                <option value="fonoaudiologo">fonoaudiologo</option>
+                <option value="forjador">forjador</option>
+                <option value="forneiro">forneiro</option>
+                <option value="fotografo">fotografo</option>
+                <option value="frentista">frentista</option>
+                <option value="funcionario ou servidor de orgao publico">funcionario ou servidor de orgao publico</option>
+                <option value="fundidor">fundidor</option>
+                <option value="funileiro">funileiro</option>
+                <option value="gandula">gandula</option>
+                <option value="garagista">garagista</option>
+                <option value="garçom">garçom</option>
+                <option value="garimpeiro">garimpeiro</option>
+                <option value="geofisico">geofisico</option>
+                <option value="geografo">geografo</option>
+                <option value="geologo">geologo</option>
+                <option value="geoquimico">geoquimico</option>
+                <option value="gerente administrativo">gerente administrativo</option>
+                <option value="gerente comercial ou de vendas">gerente comercial ou de vendas</option>
+                <option value="gerente comercial ou de vendas">gerente comercial ou de vendas</option>
+                <option value="gerente de produçao ou opraçoes">gerente de produçao ou opraçoes</option>
+                <option value="gesseiro">gesseiro</option>
+                <option value="governador">governador</option>
+                <option value="gravador">gravador</option>
+                <option value="guarda civil municipal">guarda civil municipal</option>
+                <option value="guia de turismo">guia de turismo</option>
+                <option value="guia florestal">guia florestal</option>
+                <option value="guincheiro">guincheiro</option>
+                <option value="hidrogeologo">hidrogeologo</option>
+                <option value="higienista ocupacional">higienista ocupacional</option>
+                <option value="inspetor de alunos">inspetor de alunos</option>
+                <option value="inspetor de soldagem">inspetor de soldagem</option>
+                <option value="inspetor de terminal">inspetor de terminal</option>
+                <option value="inspetor naval">inspetor naval</option>
+                <option value="instalador de produtos ou acessorios">instalador de produtos ou acessorios</option>
+                <option value="instalador de produtos ou acessorios">instalador de produtos ou acessorios</option>
+                <option value="instalador de tubulaçoes ">instalador de tubulaçoes </option>
+                <option value="instalador ou reparador de linhas e cabos eletricos e de comunicaçoes">instalador ou reparador de linhas e cabos eletricos e de comunicaçoes</option>
+                <option value="instrumentador cirurgico">instrumentador cirurgico</option>
+                <option value="instrutor de autoescola">instrutor de autoescola</option>
+                <option value="instrutor de cursos livres">instrutor de cursos livres</option>
+                <option value="instrutor de voo">instrutor de voo</option>
+                <option value="interprete">interprete</option>
+                <option value="jardineiro">jardineiro</option>
+                <option value="joalheiro">joalheiro</option>
+                <option value="jornaleiro">jornaleiro</option>
+                <option value="jornalista">jornalista</option>
+                <option value="juiz de direito">juiz de direito</option>
+                <option value="laminador">laminador</option>
+                <option value="lapidador">lapidador</option>
+                <option value="lavadeiro, em geral">lavadeiro, em geral</option>
+                <option value="lavador de roupas">lavador de roupas</option>
+                <option value="leiloeiro">leiloeiro</option>
+                <option value="leiturista">leiturista</option>
+                <option value="limpador de fachadas">limpador de fachadas</option>
+                <option value="limpador de piscinas">limpador de piscinas</option>
+                <option value="limpador de vidros">limpador de vidros</option>
+                <option value="lixeiro ou catador de lixo">lixeiro ou catador de lixo</option>
+                <option value="locutor de radio e televisao">locutor de radio e televisao</option>
+                <option value="lubrificador">lubrificador</option>
+                <option value="lustrador">lustrador</option>
+                <option value="maestro">maestro</option>
+                <option value="magico">magico</option>
+                <option value="maitre">maitre</option>
+                <option value="malabarista">malabarista</option>
+                <option value="manicure">manicure</option>
+                <option value="manobrista ou guardador de veiculos">manobrista ou guardador de veiculos</option>
+                <option value="mantenedor eletromecanico">mantenedor eletromecanico</option>
+                <option value="maquetista">maquetista</option>
+                <option value="maquiador">maquiador</option>
+                <option value="maquinista ou foguista">maquinista ou foguista</option>
+                <option value="marceneiro ou trabalhador da industria da madeira">marceneiro ou trabalhador da industria da madeira</option>
+                <option value="massagista ou massoterapeuta">massagista ou massoterapeuta</option>
+                <option value="matematico">matematico</option>
+                <option value="mecanico de aeronaves">mecanico de aeronaves</option>
+                <option value="mecanico de equipamentos navais">mecanico de equipamentos navais</option>
+                <option value="mecanico de veiculos">mecanico de veiculos</option>
+                <option value="mecanico de equipamentos industriais, comerciais ou residenciais">mecanico de equipamentos industriais, comerciais ou residenciais</option>
+                <option value="medico">medico</option>
+                <option value="menmbro superior do poder legislativo, executivo ou judiciario">menmbro superior do poder legislativo, executivo ou judiciario</option>
+                <option value="mergulhador">mergulhador</option>
+                <option value="mestre de obras e contramestre">mestre de obras e contramestre</option>
+                <option value="metalurgico">metalurgico</option>
+                <option value="meteorologista">meteorologista</option>
+                <option value="mineiro no subsolo">mineiro no subsolo</option>
+                <option value="ministro de culto religioso">ministro de culto religioso</option>
+                <option value="ministro de estado">ministro de estado</option>
+                <option value="ministro de tribunal superior">ministro de tribunal superior</option>
+                <option value="missionario">missionario</option>
+                <option value="modelo">modelo</option>
+                <option value="moldador">moldador</option>
+                <option value="monitor de teleatendimento">monitor de teleatendimento</option>
+                <option value="monitor de transporte escolar">monitor de transporte escolar</option>
+                <option value="monitor ou instrutor de menores (fundaçao casa e similares)">monitor ou instrutor de menores (fundaçao casa e similares)</option>
+                <option value="montador de maquinas">montador de maquinas</option>
+                <option value="montador ou ajustador de instrumentos de precisao">montador ou ajustador de instrumentos de precisao</option>
+                <option value="montador ou ajustador de instrumentos musicais">montador ou ajustador de instrumentos musicais</option>
+                <option value="montador ou instalador de equipamentos eletroeletronicos em geral">montador ou instalador de equipamentos eletroeletronicos em geral</option>
+                <option value="mordomo ou governantal">mordomo ou governantal</option>
+                <option value="motoboy">motoboy</option>
+                <option value="motorista de caminhao">motorista de caminhao</option>
+                <option value="motorista de carro, furgao ou veiculo similar">motorista de carro, furgao ou veiculo similar</option>
+                <option value="motorista de guincho">motorista de guincho</option>
+                <option value="motorista de onibus urbanos, metropolitanos e rodoviario">motorista de onibus urbanos, metropolitanos e rodoviario</option>
+                <option value="motorista de transporte escolar">motorista de transporte escolar</option>
+                <option value="mototaxista">mototaxista</option>
+                <option value="museologo">museologo</option>
+                <option value="musico">musico</option>
+                <option value="neuropsicologo">neuropsicologo</option>
+                <option value="numerologo">numerologo</option>
+                <option value="nutricionista">nutricionista</option>
+                <option value="oceanografo">oceanografo</option>
+                <option value="oficiais, suboficiais e srgentos do exercito, marinha e aeronautica">oficiais, suboficiais e srgentos do exercito, marinha e aeronautica</option>
+                <option value="oficial de registro">oficial de registro</option>
+                <option value="oleiro">oleiro</option>
+                <option value="operador de britadeira">operador de britadeira</option>
+                <option value="operador de camara frigorifica">operador de camara frigorifica</option>
+                <option value="operador de equipamentos de elevaçao">operador de equipamentos de elevaçao</option>
+                <option value="operador de equipamentos de raiox, ressonacia e tomografia">operador de equipamentos de raiox, ressonacia e tomografia</option>
+                <option value="operador de forno (serviços funerarios)">operador de forno (serviços funerarios)</option>
+                <option value="operador de maquinas agricolas">operador de maquinas agricolas</option>
+                <option value="operador de robos e equipamentos especiais">operador de robos e equipamentos especiais</option>
+                <option value="operador de telemarketing">operador de telemarketing</option>
+                <option value="operador em industria quimica ou petroquimica">operador em industria quimica ou petroquimica</option>
+                <option value="operador na geraçao e distribuiçao de energia (hidroeletricas, termoeletricas e nucleares)">operador na geraçao e distribuiçao de energia (hidroeletricas, termoeletricas e nucleares)</option>
+                <option value="organizador de evento">organizador de evento</option>
+                <option value="orientador educacional">orientador educacional</option>
+                <option value="ouvidor">ouvidor</option>
+                <option value="padeiro">padeiro</option>
+                <option value="paleontologo">paleontologo</option>
+                <option value="palhaço">palhaço</option>
+                <option value="paramedico">paramedico</option>
+                <option value="passadeira">passadeira</option>
+                <option value="peao de rodeio">peao de rodeio</option>
+                <option value="pedagogo">pedagogo</option>
+                <option value="pedicure">pedicure</option>
+                <option value="pedreiro">pedreiro</option>
+                <option value="pensionista">pensionista</option>
+                <option value="perfurador de rochas em cavernas">perfurador de rochas em cavernas</option>
+                <option value="perfumista">perfumista</option>
+                <option value="perito ou vistoriador em seguros">perito ou vistoriador em seguros</option>
+                <option value="pescador ou caçador">pescador ou caçador</option>
+                <option value="pesquisador">pesquisador</option>
+                <option value="piloto de aviao">piloto de aviao</option>
+                <option value="piloto de competiçao automobilistica">piloto de competiçao automobilistica</option>
+                <option value="piloto de helicoptero">piloto de helicoptero</option>
+                <option value="pintor com equipamento de segurança">pintor com equipamento de segurança</option>
+                <option value="pintor sem equipamento de segurança">pintor sem equipamento de segurança</option>
+                <option value="pipoqueiro ambulante">pipoqueiro ambulante</option>
+                <option value="pirotecnico">pirotecnico</option>
+                <option value="pizzaiolo">pizzaiolo</option>
+                <option value="plataformista (petroleo)">plataformista (petroleo)</option>
+                <option value="podologo">podologo</option>
+                <option value="poeta">poeta</option>
+                <option value="policial civil - agente de sgurança penitenciaria">policial civil - agente de sgurança penitenciaria</option>
+                <option value="policial civil, exceto agente penitenciario">policial civil, exceto agente penitenciario</option>
+                <option value="policial federal, ferroviario e rodoviario">policial federal, ferroviario e rodoviario</option>
+                <option value="policial legislativo e do senado federal">policial legislativo e do senado federal</option>
+                <option value="policial militar: comandante, coronel, tenente, major, captao e subtenente">policial militar: comandante, coronel, tenente, major, captao e subtenente</option>
+                <option value="porteiro">porteiro</option>
+                <option value="pratico">pratico</option>
+                <option value="prefeito">prefeito</option>
+                <option value="presidente da republica">presidente da republica</option>
+                <option value="presidente ou vice presidente da administrativo">presidente ou vice presidente da administrativo</option>
+                <option value="procurador">procurador</option>
+                <option value="produtor agricola">produtor agricola</option>
+                <option value="produtor cultural">produtor cultural</option>
+                <option value="produtor de texto">produtor de texto</option>
+                <option value="produtor em pecuaria">produtor em pecuaria</option>
+                <option value="professor">professor</option>
+                <option value="professor de educaçao fisica">professor de educaçao fisica</option>
+                <option value="profissional de saude nas forças armadas">profissional de saude nas forças armadas</option>
+                <option value="programador">programador</option>
+                <option value="promotor de justiça">promotor de justiça</option>
+                <option value="promotor de vendas">promotor de vendas</option>
+                <option value="protetico dentario">protetico dentario</option>
+                <option value="psicanalista">psicanalista</option>
+                <option value="psicologo">psicologo</option>
+                <option value="psicopedagogo">psicopedagogo</option>
+                <option value="publicitario">publicitario</option>
+                <option value="quimico">quimico</option>
+                <option value="rebitador">rebitador</option>
+                <option value="recepcionista">recepcionista</option>
+                <option value="recreador">recreador</option>
+                <option value="redator">redator</option>
+                <option value="relaçoes publicas">relaçoes publicas</option>
+                <option value="relojoeiro">relojoeiro</option>
+                <option value="reparador de instrumentos ou equipamentos de precisao">reparador de instrumentos ou equipamentos de precisao</option>
+                <option value="reporter">reporter</option>
+                <option value="repositor de mercadorias">repositor de mercadorias</option>
+                <option value="representante comercial">representante comercial</option>
+                <option value="restaurador de instrumentos musicais">restaurador de instrumentos musicais</option>
+                <option value="restaurador de livros">restaurador de livros</option>
+                <option value="revisor de texto">revisor de texto</option>
+                <option value="scristao">scristao</option>
+                <option value="salva-vidas">salva-vidas</option>
+                <option value="sapateiro">sapateiro</option>
+                <option value="sargento, soldado, cabo e agente da policia militar">sargento, soldado, cabo e agente da policia militar</option>
+                <option value="sargento, soldado, cabo e agente dos bombeiros">sargento, soldado, cabo e agente dos bombeiros</option>
+                <option value="secretario">secretario</option>
+                <option value="securitario">securitario</option>
+                <option value="senador">senador</option>
+                <option value="serralheiro">serralheiro</option>
+                <option value="sindicante ou investigador em seguros">sindicante ou investigador em seguros</option>
+                <option value="sociologo">sociologo</option>
+                <option value="socorrista">socorrista</option>
+                <option value="soldador">soldador</option>
+                <option value="subprocurador">subprocurador</option>
+                <option value="supervisor da industria textil">supervisor da industria textil</option>
+                <option value="supervisor de manutençao predial">supervisor de manutençao predial</option>
+                <option value="supervisor ou coordenador administrativo">supervisor ou coordenador administrativo</option>
+                <option value="supervisor ou coordenador da extraçao mineral ou da construção civil">supervisor ou coordenador da extraçao mineral ou da construção civil</option>
+                <option value="supervisor ou coordenador da industria de bebida">supervisor ou coordenador da industria de bebida</option>
+                <option value="supervisor ou coordenador da industria de fumo">supervisor ou coordenador da industria de fumo</option>
+                <option value="supervisor ou coordenador da mecanica de precisao">supervisor ou coordenador da mecanica de precisao</option>
+                <option value="supervisor ou coordenador de atendimento ao publico">supervisor ou coordenador de atendimento ao publico</option>
+                <option value="supervisor ou coordenador de carga e descarga">supervisor ou coordenador de carga e descarga</option>
+                <option value="supervisor ou coordenador de digitação e operaçao">supervisor ou coordenador de digitação e operaçao</option>
+                <option value="supervisor ou coordenador de embalagem e etiqueta">supervisor ou coordenador de embalagem e etiqueta</option>
+                <option value="supervisor ou coordenador de ensino">supervisor ou coordenador de ensino</option>
+                <option value="supervisor ou coordenador de exploraçao agropecuaria">supervisor ou coordenador de exploraçao agropecuaria</option>
+                <option value="supervisor ou coordenador de fabricaçao de instrumentos musicais">supervisor ou coordenador de fabricaçao de instrumentos musicais</option>
+                <option value="supervisor ou coordenador de joalheiria">supervisor ou coordenador de joalheiria</option>
+                <option value="supervisor ou coordenador de manutençao de eletromecanica">supervisor ou coordenador de manutençao de eletromecanica</option>
+                <option value="supervisor ou coordenador de montagem e instalaçao eletroeletronica">supervisor ou coordenador de montagem e instalaçao eletroeletronica</option>
+                <option value="supervisor ou coordenador de produçao da industria alimenticia">supervisor ou coordenador de produçao da industria alimenticia</option>
+                <option value="supervisor ou coordenador de produçao em industrias quimicas ou petroquimicas">supervisor ou coordenador de produçao em industrias quimicas ou petroquimicas</option>
+                <option value="supervisor ou coordenador de serviços">supervisor ou coordenador de serviços</option>
+                <option value="supervisor ou coordenador de vendas">supervisor ou coordenador de vendas</option>
+                <option value="supervisor ou coordenador na exploraçao florestal ou pesca">supervisor ou coordenador na exploraçao florestal ou pesca</option>
+                <option value="supervisor ou coordenador na industria metalurgica">supervisor ou coordenador na industria metalurgica</option>
+                <option value="sushiman">sushiman</option>
+                <option value="tabeliao">tabeliao</option>
+                <option value="taifeiro (exceto militares)">taifeiro (exceto militares)</option>
+                <option value="taquigrafo">taquigrafo</option>
+                <option value="tatuador">tatuador</option>
+                <option value="taxidermista">taxidermista</option>
+                <option value="taxista e similares">taxista e similares</option>
+                <option value="tecelao">tecelao</option>
+                <option value="tecnico adminstrativo">tecnico adminstrativo</option>
+                <option value="tecnico da produçao agropecuaria">tecnico da produçao agropecuaria</option>
+                <option value="tecnico da bioquimica ou biotecnologia">tecnico da bioquimica ou biotecnologia</option>
+                <option value="tecnico de sonorizaçao, cenografia ou projeçao">tecnico de sonorizaçao, cenografia ou projeçao</option>
+                <option value="tecnico de radioatividade">tecnico de radioatividade</option>
+                <option value="tecnico em biologia">tecnico em biologia</option>
+                <option value="tecnico em ciencias fisicas ou quimicas">tecnico em ciencias fisicas ou quimicas</option>
+                <option value="tecnico em eletroeletronica">tecnico em eletroeletronica</option>
+                <option value="tecnico em extraçao mineral ou geologica">tecnico em extraçao mineral ou geologica</option>
+                <option value="tecnico em laboratorio">tecnico em laboratorio</option>
+                <option value="tecnico em mineralogia ou geologia">tecnico em mineralogia ou geologia</option>
+                <option value="tecnico em navegaçao aerea, maritima ou fluvial">tecnico em navegaçao aerea, maritima ou fluvial</option>
+                <option value="tecnico em operaçao de camara fotografica, cinema e de televisao">tecnico em operaçao de camara fotografica, cinema e de televisao</option>
+                <option value="tecnico em operaçaoes industriais">tecnico em operaçaoes industriais</option>
+                <option value="tecnico em segurança do trabalho">tecnico em segurança do trabalho</option>
+                <option value="tecnico em transportes (logistica)">tecnico em transportes (logistica)</option>
+                <option value="tecnico mecatronico ou eletromecanico">tecnico mecatronico ou eletromecanico</option>
+                <option value="tecnico ou analista em informatica">tecnico ou analista em informatica</option>
+                <option value="tecnologo em alimentos">tecnologo em alimentos</option>
+                <option value="tecnologo em gastronomia">tecnologo em gastronomia</option>
+                <option value="tecnologo em meio ambiente">tecnologo em meio ambiente</option>
+                <option value="tecnologo em rochas ornamentais">tecnologo em rochas ornamentais</option>
+                <option value="tecnologo em secretariado">tecnologo em secretariado</option>
+                <option value="tecnologo em telecomunicaçoes">tecnologo em telecomunicaçoes</option>
+                <option value="telefonista">telefonista</option>
+                <option value="teologo">teologo</option>
+                <option value="terapeuta">terapeuta</option>
+                <option value="tesoureiro">tesoureiro</option>
+                <option value="tintureiro">tintureiro</option>
+                <option value="topografo">topografo</option>
+                <option value="tosador de animais">tosador de animais</option>
+                <option value="trabalhador da agropecuaria">trabalhador da agropecuaria</option>
+                <option value="trabalhador da confecçao de calçados">trabalhador da confecçao de calçados</option>
+                <option value="trabalhador da industria grafica">trabalhador da industria grafica</option>
+                <option value="trabalhador da industria textil ou confecçao de roupa">trabalhador da industria textil ou confecçao de roupa</option>
+                <option value="trabalhador na industria de fumo e cigarro">trabalhador na industria de fumo e cigarro</option>
+                <option value="tradutor">tradutor</option>
+                <option value="trapezista">trapezista</option>
+                <option value="tratador de animais">tratador de animais</option>
+                <option value="treinador educaçao fisica(personal trainer)">treinador educaçao fisica(personal trainer)</option>
+                <option value="tripulante de embarcaçao">tripulante de embarcaçao</option>
+                <option value="tropeiro">tropeiro</option>
+                <option value="urbanista">urbanista</option>
+                <option value="vendedor">vendedor</option>
+                <option value="vendedor ambulante">vendedor ambulante</option>
+                <option value="vereador">vereador</option>
+                <option value="veterinario">veterinario</option>
+                <option value="vice-governador">vice-governador</option>
+                <option value="vice-prefeito">vice-prefeito</option>
+                <option value="vice-presidente da republica">vice-presidente da republica</option>
+                <option value="vidraceiro">vidraceiro</option>
+                <option value="vigilante ou segurança">vigilante ou segurança</option>
+                <option value="vistoriador naval">vistoriador naval</option>
+                <option value="zelador de edificio">zelador de edificio</option>
+                <option value="zootecnista">zootecnista</option>
+              </datalist>
+            </div>
+        </div>
+  <!-- money -->
+          <div class="options_safe">
+            <!-- <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#moneyModal"></i> -->
+            <!-- The Modal -->
+            <div class="modal" id="moneyModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Modal body..moneyModal
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Em média, quanto você ganha por mês? </h4>
+            <div class="conteiner_choice">
+              <i class='far fa-money-bill-alt icon_form'></i>
+              <input type="text" class="age_range" aria-label="moneyy" list="money" >
+              <datalist id="money">
+                <option value="Até R$ 800.00"></option>
+                <option value="De R$ 1301.00 a R$ 2500.00"></option>
+                <option value="De R$ 2501.00 a R$ 3500.00"></option>
+                <option value="De R$ 3501.00 a R$ 4500.00"></option>
+                <option value="De R$ 4501.00 a R$ 7000.00"></option>
+                <option value="Acima de R$ 7000.00"></option>
+              </datalist>
+            </div>
+          </div>
+  <!--cover  -->
+          <div class="options_safe">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#coverModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="coverModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Cobertura básica</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <p class="text-center font-italic">Capital referente à cobertura por Morte Acidental. Esta cobertura garante o pagamento do capital segurado ao(s) beneficiário(s) indicado(s), em caso de morte ocasionada por acidente pessoal coberto.</p>
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Cobertura básica </h4>
+  
+            <div class="container_choice">
+              <i class="fa-solid fa-shield-halved icon_form "></i>
+              <input type="range" class="age_range" value="0" min="30000.00" max="300000.00" step="1" oninput="rangemoney(this.value)">
+              <span class="font-weight-bolder h2" id="numberMoney">30.000,00</span>
+            </div>
+          </div>
+  <!-- deathNatural -->
+          <div class="options_safe">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#deathNaturalModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="deathNaturalModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Cobertura para morte natural</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <p class="text-center font-italic">
+                      Garante o pagamento de uma Indenização ao(s) Beneficiário(s), em caso de Morte do Segurado, seja natural, seja acidental, devidamente coberta, exceto se decorrente de Riscos Excluídos e desde que respeitadas as demais Disposições Contratuais.
+                    </p>
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Deseja cobertura para morte natural? </h4>
+  
+            <div class="container_choice">
+              <i class='fas fa-heartbeat icon_form'></i>
+              <label for="deathNatural" class="mx-2 btn btn-outline-primary h2"><span class="h2">R$165.000</span><input id="deathNatural" type="checkbox" class="ml-1" name="togleDeath" ></label>
+            </div>
+  
+          </div>
+  <!-- deathAccidental doubleCover -->
+          <div class="options_safe">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#deathAccidentalModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="deathAccidentalModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Cobertura em dobro para morte acidental</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <p class="text-center font-italic">É a garantia de pagamento de um capital proporcional ao da garantia básica, limitado a 100% desta, em caso de morte por acidente, exceto se for decorrente dos riscos excluídos definidos nas condições gerais da apólice.
+                      Também conhecida como Morte Acidental em Dobro, pois em caso de morte por acidente o(s) beneficiário(s) recebe(m) a indenização por morte da cobertura básica mais a indenização especial de morte por acidente.
+                      É uma cobertura que recomendamos pois visa uma proteção extra nas situações mais difíceis.</p>
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Deseja cobertura em dobro para morte acidental? </h4>
+  
+            <i class='fas fa-angle-double-up icon_form'></i>
+            <label id="labelDeath" for="deathAccidental" class="mx-2 font-weight-bolder h2 ">R$330.000<input id="deathAccidental" type="checkbox" class="ml-1" name="togleDeathAccidental" onclick="doubleCover()" ></label>
+            <!-- modal no lugar do alert -->
+          </div>
+  <!-- invalid -->
+          <div class="options_safe">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#invalidModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="invalidModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Invalidez (IPA)</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <p class="text-center font-italic">Garante ao Segurado o pagamento de uma Indenização, em caso de Invalidez Permanente por Acidente do Segurado, em consequência exclusiva de Acidente Pessoal coberto, exceto se decorrente de Riscos Excluídos, observados os demais termos desta Cláusula Adicional, das Condições Gerais e as demais Disposições Contratuais.</p>
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Invalidez (IPA) </h4>
+  
+            <i class="fa-solid fa-wheelchair icon_form"></i>
+            <label for="invalid" class="mx-2 btn btn-outline-primary"><span class="h2">R$165.000</span><input id="invalid" type="checkbox" class="ml-1" name="togleInvalid" ></label>
+  
+          </div>
+  <!-- Antecipation -->
+          <div class="options_safe">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#AntecipationModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="AntecipationModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Antecipação por Doença </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                   <p class="text-center font-italic">Cobertura opcional do seguro de vida individual que consiste na antecipação do pagamento do capital segurado relativo à cobertura de Morte nos casos em que apresentar quadro clínico irreversível, em fase terminal, em decorrência das doenças devidamente cobertas, observados os riscos excluídos. Ainda está previsto como evento coberto, o estado de perda de existência independente do Segurado, por motivo de doença, apenas nos casos em que este se encontrar dentro das características especificadas nas condições gerais.
+
+                    Considera-se Segurado com quadro clínico irreversível e em fase terminal aquele que apresente estado clínico gravíssimo, sem perspectiva de recuperação,comprovado por profissional habilitado, nos casos das enfermidades abaixo cobertas:
+                    
+                    Deficiência visual, decorrente de doença.
+                    Coma irreversível por doença, exceto decorrente do uso de álcool e drogas.
+                    Doenças Terminais.
+                    Alienação mental decorrente de doença, manifestada e diagnosticada durante a vigência do seguro.
+                    Insuficiência cardíaca, refratária ao tratamento, com classificação funcional, grau IV, de acordo com a tabela NYHA, exceto doenças congênitas
+                    Doenças Crônicas
+                    Perda de existência independente do segurado</p>
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <h4 class="">Antecipação por Doença </h4>
+            <div class="container_choice">
+              <i class="fa-solid fa-briefcase-medical icon_form"></i>
+              <label for="noAntecipation" class="mx-2 btn btn-outline-primary "><span class="h2">Não</span><input id="noAntecipation" type="radio" class="ml-1" name="antecipationTogle" checked></label>
+              <label for="yesAntecipation" class="btn btn-outline-primary"><span class="h2">Sim</span><input id="yesAntecipation" type="radio" class="ml-1" name="antecipationTogle" onclick="antecipationIllnes()"></label>
+            </div>
+  
+          </div>
+  <!-- spending -->
+          <div class="options_safe">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#myModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Despesas Médico-Hospitalares e Odontológicas por Acidente</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <p class="text-center font-italic">Garante Reembolso de despesas médico hospitalar e odontológica, ao próprio segurado, quando da ocorrência de acidente coberto.</p>
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+  
+            <h4 class="">Despesas Médico-Hospitalares e Odontológicas por Acidente</h4>
+  
+            <div class="container_choice">
+              <i class="fa-solid fa-briefcase-medical icon_form"></i>
+              <label for="spending" class="mx-2 btn btn-outline-primary"><sapn class="h2">R$165.000</sapn><input id="spending" type="checkbox" class="ml-1" name="togleSpending" ></label>
+            </div>
+          </div>
+  <!-- seriousCoverage -->
+          <div class="options_safe">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#seriousCoverageModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="seriousCoverageModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Cobertura de doenças graves</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Modal body..seriousCoverage
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <label for="coverage" class="d-block">
+              <h4 class="" >Cobertura de doenças graves
+                <input id="coverage" type="checkbox" class="ml-1" name="togleSeriousCoverage" onclick="illnes()">
+              </h4>
+            </label >
+  
+            <div class="container_choice">
+              <i class="fas fa-vial icon_form"></i>
+            </div>
+          </div>
+  <!-- moreSeriousCoverage -->
+          <div id="moreSeriousCoverage" class="options_safe" style="display: none;">
+            <i class="fas fa-exclamation-circle top_exclamation " data-toggle="modal" data-target="#moreSeriousCoverageModal"></i>
+            <!-- The Modal -->
+            <div class="modal" id="moreSeriousCoverageModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+  
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Adicionar mais sete doenças à cobertura</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Modal body..moreSeriousCoverage
+                  </div>
+  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+            <label for="moreSeriousCoverage" class="d-block">
+              <h4 class="">Adicionar mais sete doenças à cobertura
+                <input id="moreCoverage" type="checkbox" class="ml-1" name="togleSeriousCoverage" >
+              </h4>
+            </label>
+  
+            <div class="container_choice">
+              <i class="fas fa-vial icon_form"><span id="bdgeillnes" class="badge badge-light">1</span></i>
+              <input  type="range" className="age_range" value="0" min="1" max="7" oninput="rangeMoreIllness(this.value)">
+              <!-- <span className="h2 font-weight-bolder" id="seriousCoverage">0</span> -->
+            </div>
+          </div>
+<!-- </form> -->
+
+        
+      </div>
+
+      <div class="col-sm-5 ">
+        <div class=" simulator mx-auto">
+            <span class="img_card_blue"><img src="./assets/img/Dark-logotipo-segurativa.png" alt="" class="img-fluid"></span>
+            <h6 class="text-center text-warning mt-n4">Seguro a partir de </h6>
+            <div class="d-flex justify-content-center align-content-center ali">
+              <span class="text-warning h6 font-weight-bold price_l">R$</span>
+              <h1 class="text-light price_center font-weight-bold">72</h1>
+              <h3 class="text-light font-weight-bold price_right">,20*</h3>
+            </div>
+            <p class="h2 text-warning font-weight-bold per_month">por mês</p>
+            <button class="btn-outline-warning btn br  text-light mt-n1" id="sent">CONTINUAR</button>
+            <small class="text-light text-center d-block ">*valor sujeito a alteração por parte da seguradora</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center">
+    <article class="bgb">
+      <h1 class="text-center font-weight-bold ">Quais são os benefícios de um Seguro de Vida?</h1>
+      <div class="table-responsive">
+        <ul class=" benefits container ">
+          <li class="d-flex mx-auto my-auto">
+            <span class="li_img"><img src="./assets/img/list.png" alt="" class=""></span>
+            <h4 class="">Proteger seus familiares no caso de você ter uma doença ou falecimento.</h4>
+          </li>
+          <li class="d-flex mx-auto">
+            <span class=""><img src="./assets/img/list.png" alt="" class=""></span>
+            <h4 class="">Proteger a sua empresa, caso um dos sócios faleça ou ficar incapacitado, o outro pode acabar se endividando por assumir as despesas da empresa.</h4>
+          </li>
+          <li class="d-flex mx-auto">
+            <span class=""><img src="./assets/img/list.png" alt="" class=""></span>
+            <h4 class="">Cobertura de doenças graves, muitas pessoas acham que seguro de vida só serve para quem morre, ele também pode cobrir doenças graves para que você possa cuidar sem ter a preocupação de quem vai pagar as contas.</h4>
+          </li>
+          <li class="d-flex mx-auto">
+            <span class=""><img src="./assets/img/list.png" alt="" class=""></span>
+            <h4 class="">Possibilidade de resgatar o valor aplicado, que é mais um benefício que você pode aproveitar em vida.</h4>
+          </li>
+          <li class="d-flex mx-auto">
+            <span class=""><img src="./assets/img/list.png" alt="" class=""></span>
+            <h4 class="">Cobertura de conta hospitalar e medicamento, uma internção hospitalar pode chegar facilmente em mais de R$ 100 mil reais se utilizar UTI ou cirurgia e ainda existem medicamentos caros e difíceis de encontrar no SUS.</h4>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="bgb">
+      <h1 class="">Diferenciais da <img src="./assets/img/Dark-logotipo-segurativa.png" alt="" class=""></h1>
+      
+      <div class="d-flex flex-wrap justify-content-around align-content-around">
+        <div class="differentials col-md-3">
+          
+          <h3 class=""><i class="icon fas fa-users mr-1"></i> Personalização</h3>
+          <p class="text-center text-capitalize font-italic">Temos seguros flexíveis que te permitem escolher as coberturas e assistências que mais se adequam ao seu perfil e momento de vida.</p>
+        </div>
+        <div class="differentials col-md-3">
+          
+          <h3 class=""><i class="fas fa-user-plus mr-3"></i> Cobertura</h3>
+          <p class="text-center text-capitalize font-italic">Com nossos seguros você conta com variadas opções de coberturas e assistências para trazer auxílio, conforto e proteção em diversas ocasiões.</p>
+        </div>
+        <div class="differentials col-md-3">
+          
+          <h3 class=""><i class="fas fa-sort-amount-up"></i> Diversidade</h3>
+          <p class="text-center text-capitalize font-italic">Temos um amplo portfólio de seguros para as diversas faixas de idade e valores de renda que se encaixam às suas necessidades para te acompanhar ao longo da vida.</p>
+        </div>
+      </div>
+      <!-- aqui link -->
+      <a href="#" class=""><button class="btn btn-outline-warning font-weight-bolder">Chat de Atendimento</button></a>
+    </article>
+  </section>
+  <footer class="foo  container-fluid">
+    
+      
+    <div class="row ">
+      <div class="col-lg-5 ">
+        <div class="d-inline-flex flex-column ml-4 ">
+          <img src="./assets/icons/Break dark logotipo segurativa.png" alt="" class="foo_logo mx-auto my-4">
+          <!-- link aqui -->
+          <a href="#" class="">
+            <button type="button" class="btn_formulary mb-4" >
+              <span class="">
+                <img src="./assets/icons/formulary.png" alt="" class="img_foo_1 "></span>
+                <h6 class="foo_title ">
+              Formulário de Contato </h6>
+              <small class="sub_btn_1 ">Preencha nosso formulário para fazer uma cotação</small>
+            </button>
+          </a>
+          <!-- link aqui -->
+          <a href="#" class="">
+            <button type="button" class="btn_formulary" >
+              <span class="">
+                <img src="./assets/icons/whats150x152.png" alt="" class="img_foo">
+              </span>
+              <h6 class="foo_title_w">
+              whatssap</h6>
+              <small class="sub_btn">Fale com um e nossos atendentes agora mesmo</small>
+            </button>
+          </a>
+          </div>
+      </div>
+        <div class="col-lg-7">
+          <div class="text-light foo_info">
+                <h5 class="d-inline font-weight-bolder ">Horário de Atendimento: </h5>De segunda a sexta das 09:00 às 20:00 horas
+          </div>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="text-light">Politica de Cookies</a>
+            <a href="#" class="text-light">Politica de Privacide</a>
+            <a href="#" class="text-light">Contato</a>
+            <a href="#" class="text-light">Trabalhe Conosco</a>
+            <!-- aqui você redireciona pro blog -->
+            <a href="#" class="text-light">Blog</a>
+          </div>
+        </div>
+    </div>
+      <div class="text-center">
+        <small class="text-light">design made by-CaspirroDesign</small><br>
+        <small class="text-light">Desenvolvido por <a href="https://www.linkedin.com/in/pedro-dos-santos-maciel-jr-30002a1b5/" class="text-light" target="_blank">Pedro</a></small><br>
+        <samll class="text-light"><span class="text-light far">&#xf1f9;</span> 2022 - Segurativa. Todos os direitos reservdos. Registro SUSEP n°xxxxxxxxxxxxx. CNPJ n° xxxxxxxxxxxxx</samll>
+      </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- import interno de script -->
+  <script src="./src/index.js"></script>
+  <!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

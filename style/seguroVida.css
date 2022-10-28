@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* nav */
+.logo {
+  width: 38vw;
+}
+.navbar {
+  border-bottom: 3px solid #383f89;
+}
+.nav-item:hover {
+  opacity: 0.7;
+}
+.btn-nav {
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #ff6f16;
+  border: 3px solid;
+  border-color: #ff6f16;
+}
+.btn-nav:hover {
+  background-color: #ff6f16;
+  color: #ffffff;
+  border: 3px solid;
+  border-color: #383f89;
+}
+.icons_nav {
+  max-width: 45px;
+}
+.icon_p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #182076;
+  margin-left: 2px;
+}
+.icon_p_services {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #182076;
+  margin-left: -6px;
+}
+/* abaixo do nav dentro do header */
+.bg_angular {
+  width: 100%;
+  background-image: url("../assets/img/bgSeVida500x500.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.title_header {
+  color: #25004f;
+}
+.card_header {
+  margin-inline: 2px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px rgb(66, 63, 63);
+}
+.card_header:hover {
+  opacity: 0.888;
+}
+.img_header {
+  width: 100%;
+}
+.form {
+  margin-top: 10px;
+  width: 300px;
+  height: 356px;
+  background-color: #323f9f;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding-inline: 10px;
+}
+.form_title {
+  font-weight: 700;
+  color: #45b7ce;
+}
+#name,
+#email,
+#phone {
+  border-radius: 13px;
+}
+.simulator {
+  margin-top: 30px;
+  width: 100%;
+  height: 356px;
+  background-color: #323f9f;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding-inline: 10px;
+}
+.simulator img {
+  width: 196px;
+}
+.price_l{
+  margin-top: -10px;
+  text-shadow:  1px 2px 5px black;
+  font-size: 3rem;
+}
+.price_center{
+  position: relative;
+  top: -14%;
+  margin-top: -45px;
+  font-size: 102pt;
+  text-shadow:  1px 2px 5px black;
+}
+.price_right {
+  margin-top: -10px;
+  font-size: 3.4rem;
+}
+.options_safe {
+  background-color: #e9f4fb;
+  margin-bottom: 5px;
+  border-radius: 12px;
+}
+#sent {
+  border-radius: 15px;
+  padding-inline: 20px;
+}
+/* presonalize seu seguro*/
+.top_exclamation {
+  color: #ee8144;
+  position: relative;
+  left: 46%;
+  top: 8px;
+  font-size: 1.5rem;
+}
+.icon_form {
+  bottom: 0;
+  left: -45%;
+  color: #25004f;
+  font-size: 2rem;
+  margin-right: 2%;
+}
+.container_choice {
+  width: 100%;
+}
+.age_range {
+  position: relative;
+  top: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.gender{
+  position: relative;
+  left: -6%;
+  width: 100%;
+
+}
+
+
+.options_safe h4 {
+  color: #250050;
+}
+
+/* footer */
+.foo {
+  min-height: 40vh;
+  background-color: #250050;
+}
+.foo_logo {
+  width: 100px;
+}
+.btn_formulary {
+  border: none;
+  font-weight: 700;
+  border-radius: 13px;
+  background-color: #ddf1ff;
+  padding-inline: 6px;
+}
+.img_foo {
+  position: relative;
+  top: 15px;
+  width: 35px;
+  margin-left: -250px;
+  /* margin-top: 10px; */
+}
+.img_foo_1 {
+  position: relative;
+  top: 15px;
+  width: 35px;
+  margin-left: -246px;
+  /* margin-top: 10px; */
+}
+.foo_title {
+  margin-bottom: 0;
+  margin-left: 55px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  margin-top: -31px;
+  font-size: 0.8rem;
+}
+.foo_title_w {
+  margin-bottom: 0;
+  /* margin-left: -135px; */
+  font-weight: bolder;
+  letter-spacing: 6px;
+  margin-top: -31px;
+  font-size: 0.8rem;
+}
+.sub_btn_1 {
+  margin-left: 50px;
+}
+.sub_btn {
+  margin-left: 40px;
+}
+.foo_info {
+  margin-top: 65px;
+}
+#labelDeath {
+  color: rgb(113, 110, 110);
+}
+.benefits {
+  background-color: #ffffff;
+  list-style: none;
+  border-radius: 20px;
+}
+.bgb {
+  padding: 25px;
+  background-color: #0099FF;
+}
+.bgb h1, h3 {
+  text-shadow:  1px 2px 5px black;
+  color: #250050;
+}
+.differentials {
+  margin-bottom: 4px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  /* width: 100px; */
+  margin-bottom: 8px;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px rgb(66 63 63);
+}
+.img_card_blue{
+  position: relative;
+  top:-18px;
+}
+/* responsive */
+
+@media screen and (min-width: 377px) {
+  .img_foo_1 {
+    position: relative;
+    top: 3px;
+    left: -25px;
+    width: 35px;
+    margin-left: -246px;
+  }
+}
+
+@media screen and (min-width: 397px) {
+  .img_foo {
+    top: 3px;
+    margin-left: -276px;
+  }
+}
+
+@media screen and (min-width: 429px) {
+  .img_foo_1 {
+    left: -25px;
+    top: 5px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .btn-carosel {
+    padding: 5px;
+  }
+  .logo {
+    width: 30vw;
+  }
+  .btn_whyChoice img {
+    max-width: 25px;
+  }
+  .top_exclamation {
+    color: #ee8144;
+    position: relative;
+  }
+  .simulator {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 30px;
+    margin-top: 30px;
+    width: 100%;
+    height: 356px;
+    background-color: #323f9f;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding-inline: 10px;
+  }
+  .price_l{
+    position: relative;
+    top: 18px;
+    text-shadow:  1px 2px 5px black;
+    font-size: 5vw;
+  }
+  .price_center{
+    position: relative;
+    top: 14px;
+    font-size: 16vw;
+    text-shadow:  1px 2px 5px black;
+  }
+  .price_right {
+    position: relative;
+    top: 18px;
+    margin-top: -10px; 
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+  .logoTable {
+    max-width: 12vh;
+  }
+
+  .form {
+    margin-top: 43px;
+  }
+  .bg_angular {
+    background-image: url("../assets/img/bgSeVida1500x570.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 863px) {
+  .logo {
+    width: 15vw;
+  }
+  .btn_whyChoice img {
+    max-width: 40px;
+  }
+  .stars {
+    width: 7%;
+    margin-left: 25px;
+  }
+  .per_month {
+    margin-top: -18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hide {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .per_month {
+    margin-top: -31px;
+  }
+}
+@media screen and (min-width: 1035px) {
+  .per_month {
+    margin-top: -31px;
+  }
+}
+@media screen and (min-width: 1075px) {
+  .hide_cards {
+    display: block;
+  }
+  .hide_desktop {
+    display: none;
+  }
+  .stars {
+    width: 4%;
+  }
+  .bg_angular {
+    background-image: url("../assets/img/bgSeVida1920x570.png");
+    background-size: cover;
+  }
+  .per_month {
+    margin-top: -31px;
+  }
+}
+@media screen and (min-width:1097px) {
+  .simulator {
+    height:420px ;
+  }
+  .per_month {
+    margin-top: -35px;
+}
+}
+@media screen and (min-width: 1750px) {
+  .logo {
+    width: 14vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .logo {
+    width: 12vw;
+  }
+}

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head text-light>
+  <script src="https://kit.fontawesome.com/d88fbfa2f1.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Somos a melhor e mais completa corretora de seguros do mercado, a  única no mercado com um seguro 100% customisavel, aqui você encontra seguros para sua casa, familia, automovel e motocicleta ">
+  <meta name="keywords" content="seguros facil, seguro rápido, seguro completo, seguro, seguro para familia, seguro para carro, seguro para moto">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segurativa</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./style/index.css">
+</head text-light>
+<body>
+  <header>
+    <!-- abaixo o menu -->
+    <nav class="navbar navheight navbar-expand-lg navbar-light d-flex justify-content-around p-xl-2">
+      <!-- Brand -->
+        <img class="navbar-brand logo" src="./assets/img/Light logotipo segurativa.png" alt="">
+        <!-- aqui é redirecionado para o whatssap -->
+        <a href="" class="text-decoration-none">
+          <button type="button" class="btn btn-nav hide text-decoration-none" >Simule Gratis, Clique Aqui</button></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar" style="margin: 0 auto;">
+          
+          <ul class="navbar-nav " style="margin: 0 auto;">
+            <div class=" row mt-sm-4 ">
+              <li class="nav-item align-self-center col">
+                <a class="nav-link " href="#"><div class=""><img class="icons_nav" src="./assets/icons/icon car.png"><p class="icon_p" alt="icone de um carro">Auto</p></div></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="#"><img class="icons_nav" src="./assets/icons/icon motorcycle.png"><p class="icon_p" alt="imagem de uma moto">Moto</p></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="./seguroVida.html"><img class="icons_nav" src="./assets/icons/icon life.png"><p class="icon_p" alt="imagem de um coração">Vida</p></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="#"><img class="icons_nav" src="./assets/icons/icon house.png"><p class="icon_p" alt="imagem de uma casa ">Casa</p></a>
+              </li>
+              <li class="nav-item align-self-center col">
+                <a class="nav-link" href="#"><img class="icons_nav" src="./assets/icons/icon service.png"><p class="icon_p_services" alt="imagem de ferramentas">Serviços</p></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <!-- aqui vai pro whatssap -->
+        <a href="#" class="text-decoration-none"><button type="button" class="btn btn-nav hide-mobile">Simule Gratis, Clique Aqui</button></a>
+
+      
+    </nav>
+    <!-- abaixo carrocel do header -->
+    <div id="carrosel" class="carousel slide " data-ride="carousel" >
+
+      <!-- Indicators -->
+      <!-- <ul class="carousel-indicators">
+        <li data-target="#carrosel" data-slide-to="0" class="active"></li>
+        <li data-target="#carrosel" data-slide-to="1"></li>
+        <li data-target="#carrosel" data-slide-to="2"></li>
+      </ul> -->
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner  " >
+        <div class="carousel-item active" >
+          <div class="carosel-content text-center">
+            <h1 class="title-carousel">Sua casa sempre numa boa</h1>
+            <p class="text-light paragraph-carousel">Tem serviços para eletrodomésticos, prevenção do lar e muito mais</p>
+            <!-- link aqui -->
+            <a href="#" class=""><button class="btn btn-carosel" type="button">CONHECER SEGURO RESIDÊNCIAL</button></a>
+          </div>
+          <img class="fluid-caroussel" src="./assets/img/banner1.jpg" alt="Seguro Casa" >
+        </div>
+        <div class="carousel-item">
+          <div class="carosel-content text-center">
+            <h1 class="title-carousel">Dirija sem extress, com seguro auto</h1>
+            <p class="text-light paragraph-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <!-- link aqui -->
+            <a href="#" class=""><button class="btn btn-carosel" type="button">CONHECER SEGURO AUTO</button></a>
+          </div>
+          <img class="fluid-caroussel" src="./assets/img/solutionCar.jpg" alt="Seguro auto">
+        </div>
+        <div class="carousel-item">
+          <div class="carosel-content text-center">
+            <h1 class="title-carousel">A sua vida plena</h1>
+            <p class="text-light paragraph-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!-- link aqui -->
+            <a href="./seguroVida.html" class=""><button class="btn btn-carosel" type="button">CONHECER SEGURO DE VIDA</button></a>
+          </div>
+          <img class="fluid-caroussel" src="./assets/img/solutionlife.jpg" alt="Seguro vida">
+        </div>
+      </div>
+
+      <!-- cards exibidos em dispositivos menores que 1075pxs -->
+        <!-- Button to Open the Modal -->
+      <div class="hide_desktop  justify-content-around mobile ">
+        <button type="button" class="btn btn-light btn_cards ml-1" data-toggle="modal" data-target="#auto">
+          <span class=""><img class="icons_carousel_mobile" src="./assets/icons/icons card main section.png" alt="imagem de um carro assegurado"></span> Saiba Mais...
+        </button>
+        <button type="button" class="btn btn-light btn_cards mx-1" data-toggle="modal" data-target="#hause">
+          <span class=""><img class="icons_carousel_mobile" src="./assets/icons/iconsCardMainSectionGreen.png" alt="imagem de uma casa segura"></span>Saiba Mais...
+        </button>
+        <button type="button" class="btn btn-light btn_cards mr-1" data-toggle="modal" data-target="#life">
+          <span class=""><img class="icons_carousel_mobile" src="./assets/icons/iconsCardMainSectionRed.png" alt="imagem representando a segurança"></span>
+          Saiba Mais...
+        </button>
+      </div>
+
+      <!-- The Modal AUTO -->
+      <div class="modal" id="auto">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title"><span class=""><img class="icons_carousel" src="./assets/icons/icons card main section.png" alt=""></span>Seguro Auto</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+          
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p class="paragraph-card">Agente quer que você curta seu carro. Mas se rolar qualquer problema, é so chamar o <strong>Seguro Auto <i>Segurativa...</i></strong> </p>
+            <a href="" class="" style="color: #ff8f00;">Saiba Mais</a>
+            <p class="price"><small class="small_price">a partir de: </small><br> R$45<small class="small_price">/mes</small></p>
+            <!-- link aqui -->
+            <a href="#" class=""><button type="button" class="btn btn_card" style="  background-color: #ff8f00;">Cote Agora</button></a>
+            <p class="small_price"><small>*o valor poderá variar de acordo com o perfil, região e coberturas selecionadas.</small></p>
+            </div>
+          
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- The Modal HAUSE -->
+      <div class="modal" id="hause">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title"><span class=""><img class="icons_carousel_mobile" src="./assets/icons/iconsCardMainSectionGreen.png" alt=""></span>Seguro Residencial</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+          
+            <!-- Modal body -->
+            <div class="modal-body text">
+              <p class="paragraph-card">Agente quer que você curta seu carro. Mas se rolar qualquer problema, é so chamar o <strong>Seguro Auto <i>Segurativa...</i></strong> </p>
+              <a href="" class="" style="color: #004e00;">Saiba Mais</a>
+              <p class="price"><small class="small_price">a partir de: </small><br> R$45<small class="small_price">/mes</small></p>
+              <!-- link aqui -->
+              <a href="#" class=""><button type="button" class="btn btn_card" style="  background-color: #004e00;">Cote Agora</button></a>
+              <p class="small_price"><small>*o valor poderá variar de acordo com o perfil, região e coberturas selecionadas.</small></p>
+            </div>
+          
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal LIFE -->
+      <div class="modal" id="life">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header ">
+              <h4 class="modal-title text-center"><span class=""><img class="icons_carousel" src="./assets/icons/iconsCardMainSectionRed.png" alt=""></span>Seguro Vida</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+          
+            <!-- Modal body -->
+            <div class="modal-body">
+              
+              <p class="paragraph-card">Agente quer que você curta seu carro. Mas se rolar qualquer problema, é so chamar o <strong>Seguro Auto <i>Segurativa...</i></strong> </p>
+              <a href="" class="" style="color: #e80009;">Saiba Mais</a>
+              <p class="price"><small class="small_price">a partir de: </small><br> R$45<small class="small_price">/mes</small></p>
+              <!-- link aqui -->
+              <a href="./seguroVida.html" class=""><button type="button" class="btn btn_card" style="  background-color: #e80009;">Cote Agora</button></a>
+              <p class="small_price"><small>*o valor poderá variar de acordo com o perfil, região e coberturas selecionadas.</small></p>
+            </div>
+          
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- cards exibidos em telas maiores que 1075pxs -->
+      <div class="hide_cards">
+        <div class="alt  d-flex  justify-content-center mt-lg-n4 text-center ">
+          <div class="bg-light cards-seguros mx-1 mx-lg-4 ">
+            <h5 class="">
+              <span class=""><img class="icons_carousel" src="./assets/icons/icons card main section.png" alt="imagem de um carro assegurado"></span>Seguro Auto
+            </h5>
+            <p class="paragraph-card">Agente quer que você curta seu carro. Mas se rolar qualquer problema, é so chamar o <strong>Seguro Auto <i>Segurativa...</i></strong> </p>
+            <a href="" class="" style="color: #ff8f00;">Saiba Mais</a>
+            <p class="price"><small class="small_price">a partir de: </small><br> R$45<small class="small_price">/mes</small></p>
+            <!-- link aqui -->
+            <a href="#" class=""><button type="button" class="btn btn_card" style="  background-color: #ff8f00;">Cote Agora</button></a>
+            <p class="small_price"><small>*o valor poderá variar de acordo com o perfil, região e coberturas selecionadas.</small></p>
+          </div>
+
+          <div class="bg-light cards-seguros mx-1 mx-lg-4 ">
+            <h5 class="">
+              <span class=""><img class="icons_carousel" src="./assets/icons/iconsCardMainSectionGreen.png" alt="imagem de uma casa segura"></span>Seguro Residencial
+            </h5>
+            <p class="paragraph-card">Agente quer que você curta seu carro. Mas se rolar qualquer problema, é so chamar o <strong>Seguro Auto <i>Segurativa...</i></strong> </p>
+            <a href="" class="" style="color: #004e00;">Saiba Mais</a>
+            <p class="price"><small class="small_price">a partir de: </small><br> R$45<small class="small_price">/mes</small></p>
+            <!-- link aqui -->
+            <a href="#" class=""><button type="button" class="btn btn_card" style="  background-color: #004e00;">Cote Agora</button></a>
+            <p class="small_price"><small>*o valor poderá variar de acordo com o perfil, região e coberturas selecionadas.</small></p>
+          </div>
+
+          <div class="bg-light cards-seguros mx-1 mx-lg-4">
+            <h5 class="">
+              <span class=""><img class="icons_carousel" src="./assets/icons/iconsCardMainSectionRed.png" alt="imagem representando a segurança"></span>Seguro Vida
+            </h5>
+            <p class="paragraph-card">Agente quer que você curta seu carro. Mas se rolar qualquer problema, é so chamar o <strong>Seguro Auto <i>Segurativa...</i></strong> </p>
+            <a href="./seguroVida.html" class="" style="color: #e80009;">Saiba Mais</a>
+            <p class="price"><small class="small_price">a partir de: </small><br> R$45<small class="small_price">/mes</small></p>
+            <!-- link aqui -->
+            <a href="./seguroVida.html" class=""><button type="button" class="btn btn_card" style="  background-color: #e80009;">Cote Agora</button></a>
+            <p class="small_price"><small>*o valor poderá variar de acordo com o perfil, região e coberturas selecionadas.</small></p>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#carrosel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carrosel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </header>
+  <section class="">
+    <article class="bg_gradientBtoW text-center">
+      <h2 class="text-light text-center ">PORQUE ESCOLHER A NOSSA CORRETORA?</h2>
+      <div class="d-flex text-light w-100 justify-content-around flex-wrap">
+        <div class="card_whyChoice_1 p-2 text-center">
+          <img src="./assets/icons/iconClock150x107.png" alt="imagem afirmando rapidez no atendimento" class="icons_choice"><h2 class="">AGILIDADE</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam id cum ducimus vero nisi dolor iusto ipsa repellendus! Itaque reiciendis eum alias voluptas ut, delectus odit accusantium minus aspernatur incidunt?</p>
+        </div>
+        <div class="card_whyChoice_2  text-center p-2">
+          <img src="./assets/icons/iconSupport150x130.png" alt="imagem afirmando que haverá pós vendas" class="icons_choice"><h2 class="">ESPECIALISTAS DIPONÍVEIS</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam id cum ducimus vero nisi dolor iusto ipsa repellendus! Itaque reiciendis eum alias voluptas ut, delectus odit accusantium minus aspernatur incidunt?</p>
+        </div>
+        <div class="card_whyChoice_1  text-center p-2">
+          <img src="./assets/icons/partnerIcon150x87.png" alt="imagem afirmando suporte" class="icons_choice"><h2 class="">ASSESSORIA</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam id cum ducimus vero nisi dolor iusto ipsa repellendus! Itaque reiciendis eum alias voluptas ut, delectus odit accusantium minus aspernatur incidunt?</p>
+        </div>
+        <div class=" card_whyChoice_2 text-center p-2 ">
+          <img src="./assets/icons/qualityIcon150x139.png" alt="imagem aprovando o produto" class="icons_choice"><h2 class="">O MELHOR SEGURO DO MERCADO</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam id cum ducimus vero nisi dolor iusto ipsa repellendus! Itaque reiciendis eum alias voluptas ut, delectus odit accusantium minus aspernatur incidunt?</p>
+        </div>
+      </div>
+      <!-- link aqui -->
+      <a href="#" class="text-decoration-none"><button type="button" class="btn btn_whyChoice text-nowrap d-flex justify-content-center align-items-center mx-auto mt-1"><span><img src="./assets/icons/whats150x152.png" alt="" class="mr-1"></span>SIMULE GRÁTIS AGORA MESMO</button></a>
+      <br>
+    </article>
+    <br>
+    <article class="mb-5">
+
+      <div class="d-flex flex-wrap  text-center justify-content-center ">
+        <div class="mb-1 position-relative text-light pic_burocracy">
+           <div class="position-absolute w-75">
+            <h5 class="mr-auto text-justify ml-3">Lorem ipsum dolor sit </h5>
+            <h1 class="mr-auto text-justify ml-3"><span class="orangeText">MIGRE </span>JA!!!</h1>
+            <br> <br>
+            <p class="mr-auto text-justify ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!-- link aqui -->
+            <a href="" class=""><button class="btn cols_btn " type="button">MIGRE PARA O MELHOR JÁ!</button></a>
+          </div>
+        </div>
+
+        <div class="mx-lg-5 mb-1 position-relative pic_satisfaction text-light ">
+          <div class="position-absolute w-75">
+            <h5 class="mr-auto text-justify ml-3mr-auto text-justify ml-3">Lorem ipsum dolor sit </h5>
+            <h1 class="mr-auto text-justify ml-3mr-auto text-justify ml-3"><span class="orangeText">VEJA</span> AGORA!!!</h1>
+            <p class="mr-auto text-justify ml-3 mr-auto text-justify ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!-- link aqui -->
+            <a href="" class=""><button class="btn cols_btn " type="button">COTE O MELHOR SEGURO!</button></a>
+          </div>
+        </div>
+
+        <div class=" mb-1 position-relative pic_email text-light ">
+          <div class="position-absolute w-75">
+            <h5 class="mr-auto text-justify ml-3">Lorem ipsum dolor sit </h5>
+            <h1 class="mr-auto text-justify ml-3">AMMET SECTUR</h1>
+            <p class="mr-auto text-justify ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!-- link aqui -->
+            <a href="#" class=""><button class="btn cols_btn " type="button">MIGRE PARA O MELHOR JÁ</button></a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- seção entre os gradientes -->
+  <article class="container-fluid d-flex flex-column gradiente_WtoB">
+    <div class="row " >
+      <!-- primeira coluna -->
+      <div class=" col-lg-6 d-flex flex-column justify-content-center text-center ">
+        <img class="navbar-brand logo mx-auto" src="./assets/img/Light logotipo segurativa.png" alt="">
+        <h5 class="url text-break">segurativa.com.br</h5>
+        <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+      </div>
+      <!-- segunda com os cards -->
+      <div class="col">
+        <div class="row">
+            <div class="col">
+              <div class="d-flex flex-column align-items-center">
+                <!-- colocar o redirecionamento dentro da tag a no href="#" -->
+                <a href="#" class="">
+                  <button class="  btn_services mx-auto" type="button">
+                    <span class=""><img src="./assets/icons/iconsSubPlanCarservice120x111.jpg" alt="" class="img_services ml-n2"></span>
+                    <sapn class="ml-sm-4">Seguro Auto</sapn>
+                  </button>
+                </a>
+                <!-- colocar o redirecionamento dentro da tag a no href="#" -->
+                <a href="#" class="">
+                  <button class="  btn_services mx-auto" type="button">
+                    <span class=""><img src="./assets/icons/motoIcon120x111.jpg" alt="" class="img_services ml-n2"></span>
+                    <sapn class="ml-sm-4">Seguro Moto</sapn>
+                  </button></a>
+                  <a href="./seguroVida.html" class="">
+                    <button class="  btn_services mx-auto" type="button">
+                      <span class=""><img src="./assets/icons/iconsSubPlanServiceLife120x111.jpg" alt="" class="img_services ml-n2"></span>
+                      <sapn class="ml-sm-4">Seguro Vida</sapn>
+                    </button></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="d-flex flex-column align-items-center">
+                <a href="#" class="">
+                  <button class="  btn_services mx-auto" type="button">
+                    <span class=""><img src="./assets/icons/iconsSubPlanServiceHause120x111.jpg" alt="" class="img_services img_hause ml-n2"></span>
+                    <sapn class="ml-sm-4">Seguro Residencial</sapn>
+                  </button></a>
+                  <a href="#" class="">
+                    <button class="  btn_services mx-auto" type="button">
+                      <span class=""><img src="./assets/icons/shieldIcon120x111.jpg" alt="" class="img_services ml-n2"></span>
+                      <sapn class="ml-sm-4">Mais Seguros</sapn>
+                    </button></a>
+                    <a href="#" class="">
+                      <button class="  btn_services mx-auto" type="button">
+                        <span class=""><img src="./assets/icons/whats150x152.png" alt="" class="img_wts ml-n1"></span>
+                        <sapn class="ml-sm-4 font-weight-bold">Cote Agora Mesmo</sapn>
+                      </button></a>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </article>
+  <section class="gradienteBtoP text-center ">
+    
+    <article class="">
+      <div class="container">
+         <h2 class="text-center text-light">COMPARE <span class="orangeText">JÁ</span></h2>
+    <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>          
+        <div class="table-responsive ">
+          <table class="mx-auto">
+            <thead class="">
+              <tr class="">
+                <th class="bg-transparent th_empty" style="min-width: 10vw;"></th><!--0-->
+                <th class="bg-warning tableHead border-bottom ">
+                  <img src="./assets/img/BreakLightLogotipoSegurativa300x217.png" alt="" class="logoTable ">
+                </th><!--1-->
+                <th class="bg-head text-light p-2">Corretoras <br> Online
+                </th><!--2-->
+                <th class="bg-head text-light p-2">Corretoras <br> Tradicionais
+                </th><!--3-->
+                <th class="bg-head text-light last_table_head p-2">Bancos
+                </th><!--4-->
+              </tr>
+            </thead>
+
+            <!-- corpo da tabela -->
+            <tbody class="bg-white">
+              <!-- 1° linha -->
+              <tr class="bg_table_1">
+                <td >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </td><!--0-->
+                <td class="bg-warning border-bottom">
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--1-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--2-->
+                <td>
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--3-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--4-->
+              </tr>
+              <!-- 2° linha -->
+              <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td><!--0-->                
+                <td class="bg-warning border-bottom">
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--1-->
+                <td>
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--2-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--3-->
+                <td>
+                  <img src="./assets/icons/middleRight150.png" alt="" class="logoTable_content">
+                </td><!--4-->
+              </tr>
+              <!-- 3° linha -->
+              <tr class="bg_table_1">
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td><!--0-->
+                <td class="bg-warning border-bottom">
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--1-->
+                <td>
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--2-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--3-->
+                <td>
+                  <img src="./assets/icons/middleRight150.png" alt="" class="logoTable_content">
+                </td><!--4-->
+              </tr>
+              <!-- 4° linha -->
+              <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td><!--0-->
+                <td class="bg-warning border-bottom">
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--1-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--2-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--3-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--4-->
+              </tr>
+              <!-- 5° linha -->
+              <tr class="bg_table_1">
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td><!--0-->
+                <td class="bg-warning border-bottom">
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--1-->
+                <td>
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--2-->
+                <td>
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--3-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--4-->
+              </tr>
+              <!-- 6° linha -->
+              <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td><!--0-->
+                <td class="bg-warning border-bottom">
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--1-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--2-->
+                <td>
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--3-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--4-->
+              </tr>
+              <!-- 7° linha -->
+              <tr class="bg_table_1">
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td><!--0-->
+                <td class="bg-warning border-bottom">
+                  <img src="./assets/icons/right150.png" alt="" class="logoTable_content ">
+                </td><!--1-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--2-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--3-->
+                <td>
+                  <img src="./assets/icons/wrong150.png" alt="" class="logoTable_content">
+                </td><!--4-->
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+     
+    </article>
+  </section>
+  <section class="bg_purple">
+    <article class="text-center pos">
+     <h4 class="text-light font-weight-bold text-center position"><span class="text_blue">SEGURATIVA CONSÓRCIOS </span>PARA QUEM QUER REIVENTAR SEU FUTURO DE FORMA <SPAN class="under">SEGURA</SPAN> E <SPAN class="under">PLANEJADA</SPAN>!!</h4>
+      <p class="text-justify text-light container mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex porro cupiditate debitis id, necessitatibus minus beatae, molestiae reprehenderit alias amet unde. Modi veniam sequi ad autem voluptatum? Adipisci, temporibus soluta?</p>
+      <small class="text-light d-block mb-n2">Com a SEGURATIVA, seus sonhos não envelhecem</small>
+      <!-- link aqui -->
+      <a href="#" class=""><button class="btn_con" type="button">Simule seu consórco</button></a>
+    </article>
+  </section>
+  <section class="">
+    <article class="">
+      <div class="img_content">
+        <div class="ml-4 position-relative ttl">
+          <h2 class="text-left font-weight-bolder orangeText">SEGURATIVA CONSÓRCIOS </h2>
+          <h4 class="text-light">O melhor investimento pra você</h4>
+        </div>
+        <div class="mt-5">
+          <h1 class="display-4 text-light ml-4 font-weight-bolder">Sonhe</h1>
+          <h1 class="display-4 text-light ml-4 font-weight-bolder">Planeje</h1>
+          <h1 class="display-4 text-light ml-4 font-weight-bolder">Conquiste</h1>
+        </div>
+        <div class="ml-5 ">
+          <h6 class="text-light ml-5"><small>Simule e Compre seu Consórcio Online</small></h6>
+          <img src="./assets/icons/stars150x28.png" alt="" class="stars">
+          <!-- link aqui -->
+          <a href="#" class=""><button class="btn_consor" type="button">Simule aqui</button></a>
+        </div>
+      </div>
+    </article>
+    <div class="d-flex w-100 justify-content-around flex-wrap card_position text-center">
+      <div class="card_consorcio text-center">
+        <img src="./assets/icons/iconHomeLaranja150.png" alt="" class="card_img"> <h5 class="">Consórcio de imovéis</h5>
+        <!-- link aqui -->
+        <a href="#" class=""><button class="btn_consorcio" type="button">Simule seu consórcio</button></a>
+      </div>
+      <div class="card_consorcio text-center">
+        <img src="./assets/icons/carOrange150x96.png" alt="" class="card_img"> <h5 class="">Consórcio de carros</h5>
+        <!-- link aqui -->
+        <a href="" class=""><button class="btn_consorcio" type="button">Simule seu consórcio</button></a>
+      </div>
+      <div class="card_consorcio text-center">
+        <img src="./assets/icons/icar2orange.png" alt="" class="card_img"> <h5 class="">Consórcio de caminhão</h5>
+        <!-- link aqui -->
+        <a href="#" class=""><button class="btn_consorcio" type="button">Simule seu consórcio</button></a>
+      </div>
+      <div class="card_consorcio text-center">
+        <img src="./assets/icons/iconMotorCycle2.png" alt="" class="card_img"> <h5 class="">Consórcio de moto</h5>
+        <!-- link aqui -->
+        <a href="#" class=""><button class="btn_consorcio" type="button">Simule seu consórcio</button></a>
+      </div>
+      <div class="card_consorcio text-center">
+        <img src="./assets/icons/partnerIconOrange150x86.png" alt="" class="card_img"> <h5 class="">Consórcio de serviços</h5>
+        <!-- link aqui -->
+        <a href="#" class=""><button class="btn_consorcio" type="button">Simule seu consórcio</button></a>
+      </div>
+    </div>
+    <article class="">
+      <h5 class="font-weight-bolder text-center">confira as ultimas noticias do nosso blog</h5>
+      <div class="d-flex w-100 justify-content-around flex-wrap  ">
+        <div class="card" style="width:30%">
+          <img class="card-img-top" src="./assets/cards/card-relax300x200.jpg" alt="Card image">
+          <div class="card-body">
+            <p class="card-text">Some example text.</p>
+            <!-- link aqui -->
+            <a href="#" class=" ml-n3">Saiba mais...</a>
+          </div>
+        </div>
+        <div class="card" style="width:30%">
+          <img class="card-img-top" src="./assets/cards/cardCellphone300x238.jpg" alt="Card image">
+          <div class="card-body">
+            <p class="card-text">Some example text.</p>
+            <!-- link aqui -->
+            <a href="#" class="ml-n3">Saiba mais...</a>
+          </div>
+        </div>
+        <div class="card" style="width:30%">
+          <img class="card-img-top" src="./assets/cards/cardBills300x200.jpg" alt="Card image">
+          <div class="card-body">
+            <p class="card-text">Some example text.</p>
+            <!-- link aqui -->
+            <a href="#" class="ml-n3">Saiba mais...</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="mx-auto mt-3  w-75 d-flex justify-content-center flex-wrap align-content-around">
+      <img src="./assets/companies/unimed.png" alt="" class="companies">
+      <img src="./assets/companies/tokioMarine.png" alt="" class="companies">
+      <img src="./assets/companies/sura.png" alt="" class="companies">
+      <img src="./assets/companies/sompo.png" alt="" class="companies">
+      <img src="./assets/companies/portoSeguro.png" alt="" class="companies">
+      <img src="./assets/companies/msig.png" alt="" class="companies">
+      <img src="./assets/companies/HDISeguros.png" alt="" class="companies">
+      <img src="./assets/companies/chubb.png" alt="" class="companies">
+      <img src="./assets/companies/zurich.png" alt="" class="companies">
+      <img src="./assets/companies/aliro.png" alt="" class="companies">
+      <img src="./assets/companies/americanLife.png" alt="" class="companies">
+      <img src="./assets/companies/amil.png" alt="" class="companies">
+      <img src="./assets/companies/aruana.png" alt="" class="companies">
+      <img src="./assets/companies/azulSeguros.png" alt="" class="companies">
+      <img src="./assets/companies/bradesco.png" alt="" class="companies">
+      <img src="./assets/companies/icatu.png" alt="" class="companies">
+      <img src="./assets/companies/mapfre.png" alt="" class="companies">
+      <img src="./assets/companies/MAGSeguros.png" alt="" class="companies">
+      <img src="./assets/companies/juntoSeguros.png" alt="" class="companies">
+      <img src="./assets/companies/essor.png" alt="" class="companies">
+      <img src="./assets/companies/capemisa.png" alt="" class="companies">
+      <img src="./assets/companies/allianz.png" alt="" class="companies">
+      <img src="./assets/companies/AXA.png" alt="" class="companies">
+      <img src="./assets/companies/libertySeguros.png" alt="" class="companies">
+    </div>
+  </section>
+  <footer class="foo  container-fluid">
+    
+      
+    <div class="row ">
+      <div class="col-lg-5 ">
+        <div class="d-inline-flex flex-column ml-4 ">
+          <img src="./assets/icons/Break dark logotipo segurativa.png" alt="" class="foo_logo mx-auto my-4">
+          <!-- link aqui -->
+          <a href="#" class="">
+            <button type="button" class="btn_formulary mb-4" >
+              <span class="">
+                <img src="./assets/icons/formulary.png" alt="" class="img_foo_1 "></span>
+                <h6 class="foo_title ">
+              Formulário de Contato </h6>
+              <small class="sub_btn_1 ">Preencha nosso formulário para fazer uma cotação</small>
+            </button>
+          </a>
+          <!-- link aqui -->
+          <a href="#" class="">
+            <button type="button" class="btn_formulary" >
+              <span class="">
+                <img src="./assets/icons/whats150x152.png" alt="" class="img_foo">
+              </span>
+              <h6 class="foo_title_w">
+              whatssap</h6>
+              <small class="sub_btn">Fale com um e nossos atendentes agora mesmo</small>
+            </button>
+          </a>
+          </div>
+      </div>
+        <div class="col-lg-7">
+          <div class="text-light foo_info">
+                <h5 class="d-inline font-weight-bolder ">Horário de Atendimento: </h5>De segunda a sexta das 09:00 às 20:00 horas
+          </div>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="text-light">Politica de Cookies</a>
+            <a href="#" class="text-light">Politica de Privacide</a>
+            <a href="#" class="text-light">Contato</a>
+            <a href="#" class="text-light">Trabalhe Conosco</a>
+            <!-- aqui você redireciona pro blog -->
+            <a href="#" class="text-light">Blog</a>
+          </div>
+        </div>
+    </div>
+      <div class="text-center">
+        <small class="text-light">design made by-CaspirroDesign</small><br>
+        <small class="text-light">Desenvolvido por <a href="https://www.linkedin.com/in/pedro-dos-santos-maciel-jr-30002a1b5/" class="text-light" target="_blank">Pedro</a></small><br>
+        <samll class="text-light"><span class="text-light far">&#xf1f9;</span> 2022 - Segurativa. Todos os direitos reservdos. Registro SUSEP n°xxxxxxxxxxxxx. CNPJ n° xxxxxxxxxxxxx</samll>
+      </div>
+  </footer>
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

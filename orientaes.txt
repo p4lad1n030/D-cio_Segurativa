@@ -1,0 +1,46 @@
+Orientações de página Segurativa - Cálculo de seguro
+
+OBSERVAÇÕES: Os textos para os sinais de atenção estão na aba +Detalhes da página SeguroFacil
+
+Página 1 
+- Cabeçalho igual ao da página Home
+- Sombreamento nos logotipos das seguradoras
+- Caixa de contato para Whatsapp já com as informações preenchidas
+
+Página 2
+- Caixa contendo o valor simulado descendo conforme o cliente desce a página no computador
+- No celular, essa caixa deve ficar na abaixo de todos os itens a serem preenchidos
+
+Página 3
+- No campo de Profissão, seguir a lista anexo para profissões com autopreenchimento
+- No campo da renda, descer uma caixa de sugestões com os seguintes valores:
+
+
+Até R$ 800,00
+De R$ 801,00 a R$ 1300,00
+De R$ 1301,00 a R$ 2500,00
+De R$ 2501,00 a R$ 3500,00
+De R$ 3501,00 a R$ 4500,00
+De R$ 4501,00 a R$ 7000,00
+Acima de R$ 7000,00
+
+Página 4
+
+- Ao ativar cobertura em dobro, os números mudam de cor e automaticamente o campo de Invalidez é ativado, aparece a seguinte mensagem: 
+(Cobertura IPA adicionada
+- Ao ativar a cobertura para morte acidental em dobro, a IPA em dobro também aparece
+Foi adicionado a cobertura de IPA porque é pré-requisito para contratar a cobertura Capital em Dobro para Morte Acidental ou Antecipação por Doença.)
+- O mesmo ocorre se ativar o Antecipação por Doença
+
+Página 6
+- Ao ativar a cobertura de doenças graves a opção de adicionar mais 7 doenças a cobertura também aparece.
+
+Página de Diferenciais
+
+- Efeito de zoom ou algum distaque quando o mouse passar por cima, no celular pode um ficar em baixo do outro
+- Chat de Atendimento com link para whatsapp
+
+Rodapé conforme o modelo padrão da Home
+
+
+
