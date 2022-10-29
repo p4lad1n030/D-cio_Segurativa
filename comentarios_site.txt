@@ -1,5 +1,5 @@
 Cabeçalho
-- Logotipo do Segurativa e do botão de simulação mais para dentro da página
+- Logotipo do Segurativa e do botão de simulação mais para dentro da página(feito!)
 
 Quadrados de Seguro Auto - Residencial e Vida
 - Os nomes não estão aparecendo na versão mobile

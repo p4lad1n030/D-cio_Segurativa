@@ -566,6 +566,12 @@ margin-left: 40px;
   .hide-mobile {
     display: inline-block;
   }
+  .inventando_coisas {
+    margin-left: 24px;
+  }
+  .inventando {
+    margin-right: 24px;
+  }
 }
 @media screen and (min-width: 1075px) {
   .hide_cards {
@@ -577,12 +583,7 @@ margin-left: 40px;
   .stars {
     width: 4%;
   }
-  .inventando_coisas {
-    margin-left: 24px;
-  }
-  .inventando {
-    margin-right: 24px;
-  }
+
 }
 @media screen and (min-width: 1750px) {
   .logo {
