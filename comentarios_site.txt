@@ -10,11 +10,11 @@ Consórcio
 - O mesmo vale para os quadrados de simulação, todos estão pequenos feito
 
 Rodapé
-- Logotipos dos mensageiros estão desalinhados
+- Logotipos dos mensageiros estão desalinhados n achei!
 
 PÁGINA DO SEGURO DE VIDA
 
-- Caixa de contato - aumentar o tamanho da palavra "simular"
+- Caixa de contato - aumentar o tamanho da palavra "simular" v.
 - Retirar a caixa "deseja cobertura para morte natural?"
 - Na caixa de cobertura para dobro de morte acidental, o valor deve ser sempre o dobro da cobertura básica
 - O valor que aparece na cobertura básica deve aparecer na invalidez (IPA)
