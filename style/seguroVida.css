@@ -242,12 +242,18 @@
 /* responsive */
 
 @media screen and (min-width: 377px) {
-  .img_foo_1 {
+  .img_foo {
     position: relative;
     top: 3px;
-    left: -25px;
     width: 35px;
-    margin-left: -246px;
+    margin-left: -271px;
+}
+
+  .img_foo_1 {
+    position: relative;
+    top: 14px;
+    left: -11px;
+    width: 35px;
   }
 }
 
