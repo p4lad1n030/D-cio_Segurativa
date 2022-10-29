@@ -16,7 +16,7 @@ const principalValue = document.getElementById('principalValue')
 const ageRange = document.getElementById
 ('ageRange')
 const cover = document.getElementById('cover')
-
+const ipaValue = document.getElementById('ipaValue')
 
 // fim
 /*
@@ -63,6 +63,19 @@ function rangemoney(value) {
     currency: "BRL",
   }).format(value);
   console.log(value)
+
+  labelDeath.innerHTML = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(value * 2) ;
+  
+  ipaValue.innerHTML = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(value) ;
+
+  
+
   // return money = value
 }
 
@@ -95,17 +108,17 @@ budget().then(()=> {
   // console.log(money);
   
 
-    if (age <= 35 && money <= 41000) { 
+//     if (age <= 35 && money <= 41000) { 
 
-    }else if (age ) {
+//     }else if (age ) {
 
-    }
+//     }
+//   })
+
+// document.onload = function(){
+//   let age = rangeAge()
+//   let money = rangemoney()
   })
-
-document.onload = function(){
-  let age = rangeAge()
-  let money = rangemoney()
-  }
 
 // =====
 function rangeMoreIllness(value) {
@@ -117,10 +130,10 @@ function rangeMoreIllness(value) {
   }
 }
 // função para exibir a cobertura ipa
-function doubleCover() {
-  if (selected[12].checked) {
+function doubleCover() { 
+  if (selected[11].checked) {
     labelDeath.style.color = "#4F3776"
-    selected[13].setAttribute("checked", "checked");
+    selected[12].setAttribute("checked", "checked");
     alert(
       "Foi adicionado a cobertura de IPA porque é pré-requisito para contratar a cobertura Capital em Dobro para Morte Acidental ou Antecipação por Doença."
     );
@@ -129,11 +142,11 @@ function doubleCover() {
   }
 }
 function antecipationIllnes() {
-  if (selected[15].checked) {
-      if(selected[13].checked){
+  if (selected[14].checked) {
+      if(selected[12].checked){
         return;
       }else{
-      selected[13].setAttribute("checked", "checked");
+      selected[12].setAttribute("checked", "checked");
       alert(
         "Foi adicionado a cobertura de IPA porque é pré-requisito para contratar a cobertura Capital em Dobro para Morte Acidental ou Antecipação por Doença."
       );

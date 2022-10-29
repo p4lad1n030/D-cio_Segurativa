@@ -15,9 +15,9 @@ Rodapé
 PÁGINA DO SEGURO DE VIDA
 
 - Caixa de contato - aumentar o tamanho da palavra "simular" v.
-- Retirar a caixa "deseja cobertura para morte natural?"
-- Na caixa de cobertura para dobro de morte acidental, o valor deve ser sempre o dobro da cobertura básica
-- O valor que aparece na cobertura básica deve aparecer na invalidez (IPA)
+- Retirar a caixa "deseja cobertura para morte natural?" v.
+- Na caixa de cobertura para dobro de morte acidental, o valor deve ser sempre o dobro da cobertura básica v.
+- O valor que aparece na cobertura básica deve aparecer na invalidez (IPA) v.
 - Despesas médico-hospitalares - Apenas sim ou não
 - Cobertura de doenças graves - Apenas sim ou não
 - Deixa o Doenças Graves com a primeira letra maiscula

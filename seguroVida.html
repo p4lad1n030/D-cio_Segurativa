@@ -887,7 +887,7 @@
             <h4 class="">Deseja cobertura em dobro para morte acidental? </h4>
   
             <i class='fas fa-angle-double-up icon_form'></i>
-            <label id="labelDeath" for="deathAccidental" class="mx-2 font-weight-bolder h2 ">R$330.000<input id="deathAccidental" type="checkbox" class="ml-1" name="togleDeathAccidental" onclick="doubleCover()" ></label>
+            <label  for="deathAccidental" class="mx-2 font-weight-bolder h2 "><span id="labelDeath">R$ 60.000,00 </span><input id="deathAccidental" type="checkbox" class="ml-1" name="togleDeathAccidental" onclick="doubleCover()" ></label>
             <!-- modal no lugar do alert -->
           </div>
   <!-- invalid -->
@@ -920,7 +920,7 @@
             <h4 class="">Invalidez (IPA) </h4>
   
             <i class="fa-solid fa-wheelchair icon_form"></i>
-            <label for="invalid" class="mx-2 btn btn-outline-primary"><span class="h2">R$165.000</span><input id="invalid" type="checkbox" class="ml-1" name="togleInvalid" ></label>
+            <label for="invalid" class="mx-2 btn btn-outline-primary"><span id="ipaValue" class="h2">R$ 30.000,00</span><input id="invalid" type="checkbox" class="ml-1" name="togleInvalid" ></label>
   
           </div>
   <!-- Antecipation -->
@@ -1000,7 +1000,8 @@
   
             <div class="container_choice">
               <i class="fa-solid fa-briefcase-medical icon_form"></i>
-              <label for="spending" class="mx-2 btn btn-outline-primary"><sapn class="h2">R$165.000</sapn><input id="spending" type="checkbox" class="ml-1" name="togleSpending" ></label>
+              <label for="spending" class="mx-2 btn btn-outline-primary"><span class="h2">Não</span><input id="spending" type="radio" class="ml-1" name="togleSpending" checked></label>
+              <label for="spending1" class="mx-2 btn btn-outline-primary"><span class="h2">Sim</span><input id="spending1" type="radio" class="ml-1" name="togleSpending" ></label>
             </div>
           </div>
   <!-- seriousCoverage -->
@@ -1030,15 +1031,11 @@
                 </div>
               </div>
             </div>
-            <label for="coverage" class="d-block">
-              <h4 class="" >Cobertura de doenças graves
-                <input id="coverage" type="checkbox" class="ml-1" name="togleSeriousCoverage" onclick="illnes()">
-              </h4>
+            <h4 class="" >Cobertura de Doenças graves</h4>
+            <i class="fas fa-vial icon_form"></i>
+            <label for="coverage1" class="btn btn-outline-primary mr-3"><span class="h2">Não</span><input id="coverage1" type="radio" class="" name="togleSeriousCoverage" checked>
             </label >
-  
-            <div class="container_choice">
-              <i class="fas fa-vial icon_form"></i>
-            </div>
+            <label for="coverage" class="btn btn-outline-primary"><span class="h2">Sim</span><input id="coverage" type="radio" class="ml-1" name="togleSeriousCoverage" onclick="illnes()"></label >
           </div>
   <!-- moreSeriousCoverage -->
           <div id="moreSeriousCoverage" class="options_safe" style="display: none;">
