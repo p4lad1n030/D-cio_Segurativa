@@ -11,6 +11,8 @@ const moreSeriousCoverage = document.getElementById('moreSeriousCoverage')
 const moreCoverage = document.getElementById('moreCoverage')
 const labelDeath = document.getElementById('labelDeath')
 const bdgeillnes = document.getElementById('bdgeillnes')
+const cents = document.getElementById('cents')
+const principalValue = document.getElementById('principalValue')
 // fim
 /*
 array com os inputs

@@ -255,6 +255,22 @@
     left: -11px;
     width: 35px;
   }
+  .price_l {
+    margin-top: 11px;
+    text-shadow: 1px 2px 5px black;
+    font-size: 3rem;
+}
+  .price_center {
+    position: relative;
+    top: 16px;
+    margin-top: -45px;
+    font-size: 102pt;
+    text-shadow: 1px 2px 5px black;
+  }
+  .price_right {
+    margin-top: 6px;
+    font-size: 3.4rem;
+}
 }
 
 @media screen and (min-width: 397px) {
@@ -402,4 +418,22 @@
   .logo {
     width: 12vw;
   }
+  .simulator {
+    height: 500px;
+}
+.price_right {
+  position: relative;
+  top: 71px;
+  margin-top: -10px;
+  font-size: 5vw;
+}
+.price_l {
+  position: relative;
+  top: 49px;
+  text-shadow: 1px 2px 5px black;
+  font-size: 5vw;
+}
+.al {
+  margin-bottom: -52px;
+}
 }
