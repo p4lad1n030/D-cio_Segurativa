@@ -1,0 +1,23 @@
+Cabeçalho
+- Logotipo do Segurativa e do botão de simulação mais para dentro da página
+
+Quadrados de Seguro Auto - Residencial e Vida
+- Os nomes não estão aparecendo na versão mobile
+- A fonte parece estar destorcida, a leitura está dificil
+
+Consórcio
+- Primeiro botão de simulação pode fazer maior, ele está muito pequeno
+- O mesmo vale para os quadrados de simulação, todos estão pequenos
+
+Rodapé
+- Logotipos dos mensageiros estão desalinhados
+
+PÁGINA DO SEGURO DE VIDA
+
+- Caixa de contato - aumentar o tamanho da palavra "simular"
+- Retirar a caixa "deseja cobertura para morte natural?"
+- Na caixa de cobertura para dobro de morte acidental, o valor deve ser sempre o dobro da cobertura básica
+- O valor que aparece na cobertura básica deve aparecer na invalidez (IPA)
+- Despesas médico-hospitalares - Apenas sim ou não
+- Cobertura de doenças graves - Apenas sim ou não
+- Deixa o Doenças Graves com a primeira letra maiscula
