@@ -464,6 +464,13 @@ margin-left: 40px;
 /* -====responsive area====--- */
 
 @media screen and (min-width: 377px) {
+  .img_foo {
+    position: relative;
+    top: 3px;
+    width: 35px;
+    margin-left: -282px;
+
+}
   .img_foo_1 {
     position: relative;
     top: 15px;
