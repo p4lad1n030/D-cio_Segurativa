@@ -13,6 +13,11 @@ const labelDeath = document.getElementById('labelDeath')
 const bdgeillnes = document.getElementById('bdgeillnes')
 const cents = document.getElementById('cents')
 const principalValue = document.getElementById('principalValue')
+const ageRange = document.getElementById
+('ageRange')
+const cover = document.getElementById('cover')
+
+
 // fim
 /*
 array com os inputs
@@ -44,15 +49,42 @@ inputs do header
 
 // função para trataro formulario do header
 
+// ==
+
+
 function rangeAge(value) {
   numberAge.innerHTML = value;
+  return  age = value
 }
 function rangemoney(value) {
   numberMoney.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
   }).format(value);
+  
+  return money = value
 }
+
+// função para exibir o valor no quadro de orçamento
+function budget(age, money) {
+  
+ 
+  // var promise = new Promise(function(resolve, reject){
+  //   if(){ 
+
+  //   }else if(){
+
+  //   }else if(){
+      
+  //   }else if(){
+      
+  //   }else if(){
+      
+  //   }
+  // })
+}
+
+// =====
 function rangeMoreIllness(value) {
   if (illnessMore.checked) {
     moreIllness.innerHTML = new Intl.NumberFormat("pt-BR", {
