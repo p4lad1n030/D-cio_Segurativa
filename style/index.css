@@ -461,6 +461,7 @@ margin-left: 40px;
 .hide-mobile {
   display: none;
 }
+
 /* -====responsive area====--- */
 
 @media screen and (min-width: 377px) {
@@ -575,6 +576,12 @@ margin-left: 40px;
   }
   .stars {
     width: 4%;
+  }
+  .inventando_coisas {
+    margin-left: 24px;
+  }
+  .inventando {
+    margin-right: 24px;
   }
 }
 @media screen and (min-width: 1750px) {
