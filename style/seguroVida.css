@@ -377,6 +377,12 @@
   .per_month {
     margin-top: -31px;
   }
+  .inventando_coisas {
+    margin-left: 24px;
+  }
+  .inventando {
+    margin-right: 24px;
+  }
 }
 @media screen and (min-width: 1035px) {
   .per_month {

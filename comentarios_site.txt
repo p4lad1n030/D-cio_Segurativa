@@ -6,8 +6,8 @@ Quadrados de Seguro Auto - Residencial e Vida
 - A fonte parece estar destorcida, a leitura está dificil
 
 Consórcio
-- Primeiro botão de simulação pode fazer maior, ele está muito pequeno
-- O mesmo vale para os quadrados de simulação, todos estão pequenos
+- Primeiro botão de simulação pode fazer maior, ele está muito pequeno feito
+- O mesmo vale para os quadrados de simulação, todos estão pequenos feito
 
 Rodapé
 - Logotipos dos mensageiros estão desalinhados
