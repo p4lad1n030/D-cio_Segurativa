@@ -174,7 +174,7 @@ p, a {
 .btn_whyChoice {
   padding: 5px;
   font-size: 4vw;
-  width: 271px;
+  width: 84vw;
   font-weight: 500;
   background-color: #ffffff;
   color: #ff6f16;
@@ -492,6 +492,17 @@ margin-left: 40px;
   }
   .logo {
     width: 30vw;
+  }
+  .btn_whyChoice {
+    padding: 5px;
+    font-size: 4vw;
+    width: 71vw;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #ff6f16;
+    border: 3px solid;
+    border-radius: 22px;
+    border-color: #ff6f16;
   }
   .btn_whyChoice img {
     max-width: 25px;
