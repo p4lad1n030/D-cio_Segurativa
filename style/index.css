@@ -537,15 +537,17 @@ margin-left: 40px;
     width: 38vw;
 
   }
-  /* .btn_whyChoice img {
-    max-width: 30px;
-  } */
   .logoTable {
     max-width: 12vh;
   }
   .stars {
     width: 10%;
   }
+  .bg_gradientBtoW {
+    background: linear-gradient(to top, #ffffff, #00b0fc);
+    position: relative;
+    top: -125px;
+}
 }
 
 @media screen and (min-width: 863px) {
@@ -589,7 +591,11 @@ margin-left: 40px;
   .stars {
     width: 4%;
   }
-
+  .bg_gradientBtoW {
+    background: linear-gradient(to top, #ffffff, #00b0fc);
+    position: relative;
+    top: 0;
+}
 }
 @media screen and (min-width: 1750px) {
   .logo {
