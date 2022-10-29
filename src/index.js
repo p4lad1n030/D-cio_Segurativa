@@ -54,35 +54,58 @@ inputs do header
 
 function rangeAge(value) {
   numberAge.innerHTML = value;
-  return  age = value
+  console.log(value)
+  // return  age = value
 }
 function rangemoney(value) {
   numberMoney.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
   }).format(value);
-  
-  return money = value
+  console.log(value)
+  // return money = value
 }
 
 // função para exibir o valor no quadro de orçamento
-function budget(age, money) {
-  
+function budget() {
  
-  // var promise = new Promise(function(resolve, reject){
-  //   if(){ 
+  var promise = new Promise(function(resolve, reject){
+    // if(){ 
 
-  //   }else if(){
+    // }else if(){
 
-  //   }else if(){
+    // }else if(){
       
-  //   }else if(){
+    // }else if(){
       
-  //   }else if(){
+    // }else if(){
       
-  //   }
-  // })
+    // }
+
+resolve()
+reject()
+
+})
+return promise
 }
+budget().then(()=> {
+  // let age = rangeAge()
+  // let money = rangemoney()
+  // console.log(age);
+  // console.log(money);
+  
+
+    if (age <= 35 && money <= 41000) { 
+
+    }else if (age ) {
+
+    }
+  })
+
+document.onload = function(){
+  let age = rangeAge()
+  let money = rangemoney()
+  }
 
 // =====
 function rangeMoreIllness(value) {

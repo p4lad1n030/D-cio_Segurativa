@@ -43,4 +43,5 @@ Página de Diferenciais
 Rodapé conforme o modelo padrão da Home
 
 
-
+colocar o codigo da função que é as funções de exibir o range das funções dentro do corpo da promisse e só então no .then executar o if else
+colocar cada uma das funções dentro de uma variavelpra indentificar no if else
