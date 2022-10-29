@@ -85,7 +85,8 @@
 .simulator {
   margin-top: 30px;
   width: 100%;
-  height: 356px;
+  height: auto;
+  /* height: 356px; */
   background-color: #323f9f;
   border-radius: 20px;
   box-sizing: border-box;
@@ -306,7 +307,7 @@
     top: 30px;
     margin-top: 30px;
     width: 100%;
-    height: 29vh;
+    height: auto;
     background-color: #323f9f;
     border-radius: 20px;
     box-sizing: border-box;
@@ -412,7 +413,8 @@
     top: 30px;
     margin-top: 30px;
     width: 100%;
-    height: 32vh;
+    height: auto;
+    /* height: 32vh; */
     background-color: #323f9f;
     border-radius: 20px;
     box-sizing: border-box;
@@ -432,7 +434,8 @@
     top: 30px;
     margin-top: 30px;
     width: 100%;
-    height: 36vh;
+    height: auto;
+    /* height: 36vh; */
     background-color: #323f9f;
     border-radius: 20px;
     box-sizing: border-box;
@@ -451,7 +454,8 @@
     top: 30px;
     margin-top: 30px;
     width: 100%;
-    height: 38vh;
+    height: auto;
+    /* height: 38vh; */
     background-color: #323f9f;
     border-radius: 20px;
     box-sizing: border-box;
@@ -459,9 +463,9 @@
   }
 }
 @media screen and (min-width: 1691px){
-  /* .simulator {
-    height:520px ;
-  } */
+  .simulator {
+    height: auto;
+  }
   .price_right {
     position: relative;
     top: 36px;
@@ -474,7 +478,7 @@
     width: 14vw;
   }
   .simulator {
-    height: 42vh;
+    height: auto;
   }
   .price_right {
     position: relative;
