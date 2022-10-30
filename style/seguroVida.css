@@ -142,6 +142,7 @@
   top: 0;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 2px;
 }
 .gender{
   position: relative;

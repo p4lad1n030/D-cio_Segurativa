@@ -21,3 +21,8 @@ PÁGINA DO SEGURO DE VIDA
 - Despesas médico-hospitalares - Apenas sim ou não
 - Cobertura de doenças graves - Apenas sim ou não
 - Deixa o Doenças Graves com a primeira letra maiscula
+
+pegar as tres variaeis com os elementos que quero usar, os dois inputs e a div 
+usar a função oninput
+não só para alterar os valores em tela
+sim para utilizar as três variaveis e fazer a verificaçãopara saber qual o valor atualdos inputs e modificar o alvo

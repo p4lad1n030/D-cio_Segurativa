@@ -7,16 +7,17 @@ const moreIllness = document.getElementById("moreIllness");
 const selected = document.getElementsByTagName("input");
 
 const alertModal = document.getElementById("alertModal");
-const moreSeriousCoverage = document.getElementById('moreSeriousCoverage')
-const moreCoverage = document.getElementById('moreCoverage')
-const labelDeath = document.getElementById('labelDeath')
-const bdgeillnes = document.getElementById('bdgeillnes')
-const cents = document.getElementById('cents')
-const principalValue = document.getElementById('principalValue')
-const ageRange = document.getElementById
-('ageRange')
-const cover = document.getElementById('cover')
-const ipaValue = document.getElementById('ipaValue')
+const moreSeriousCoverage = document.getElementById("moreSeriousCoverage");
+const moreCoverage = document.getElementById("moreCoverage");
+const labelDeath = document.getElementById("labelDeath");
+const bdgeillnes = document.getElementById("bdgeillnes");
+const cents = document.getElementById("cents");
+const principalValue = document.getElementById("principalValue");
+const ageRange = document.getElementById("ageRange");
+const coverRange = document.getElementById("coverRange");
+const ipaValue = document.getElementById("ipaValue");
+var age;
+var cover;
 
 // fim
 /*
@@ -45,80 +46,48 @@ inputs do header
 19:input#illnessMore.ml-1
 20:input.age_range */
 
-
-
-// função para trataro formulario do header
+// função para tratar o formulario do header
 
 // ==
 
-
-function rangeAge(value) {
+const rangeAge = function (value) {
   numberAge.innerHTML = value;
-  console.log(value)
-  // return  age = value
-}
-function rangemoney(value) {
+  return (age = value);
+};
+const rangeMoney = function (value) {
   numberMoney.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
   }).format(value);
-  console.log(value)
 
   labelDeath.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
-  }).format(value * 2) ;
-  
+  }).format(value * 2);
+
   ipaValue.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
-  }).format(value) ;
-
+  }).format(value);
+  return cover = new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(value);
   
-
-  // return money = value
-}
+};
 
 // função para exibir o valor no quadro de orçamento
-function budget() {
- 
-  var promise = new Promise(function(resolve, reject){
-    // if(){ 
-
-    // }else if(){
-
-    // }else if(){
-      
-    // }else if(){
-      
-    // }else if(){
-      
-    // }
-
-resolve()
-reject()
-
-})
-return promise
+function showAge(arg) {
+  age = arg
+  // console.log(age)
+  return age
 }
-budget().then(()=> {
-  // let age = rangeAge()
-  // let money = rangemoney()
-  // console.log(age);
-  // console.log(money);
-  
-
-//     if (age <= 35 && money <= 41000) { 
-
-//     }else if (age ) {
-
-//     }
-//   })
-
-// document.onload = function(){
-//   let age = rangeAge()
-//   let money = rangemoney()
-  })
+function showCover(arg) {
+  cover = arg
+  // console.log(cover);
+  return cover
+}
+console.log(showCover)
 
 // =====
 function rangeMoreIllness(value) {
@@ -130,9 +99,9 @@ function rangeMoreIllness(value) {
   }
 }
 // função para exibir a cobertura ipa
-function doubleCover() { 
+function doubleCover() {
   if (selected[11].checked) {
-    labelDeath.style.color = "#4F3776"
+    labelDeath.style.color = "#4F3776";
     selected[12].setAttribute("checked", "checked");
     alert(
       "Foi adicionado a cobertura de IPA porque é pré-requisito para contratar a cobertura Capital em Dobro para Morte Acidental ou Antecipação por Doença."
@@ -143,38 +112,36 @@ function doubleCover() {
 }
 function antecipationIllnes() {
   if (selected[14].checked) {
-      if(selected[12].checked){
-        return;
-      }else{
+    if (selected[12].checked) {
+      return;
+    } else {
       selected[12].setAttribute("checked", "checked");
       alert(
         "Foi adicionado a cobertura de IPA porque é pré-requisito para contratar a cobertura Capital em Dobro para Morte Acidental ou Antecipação por Doença."
       );
-      }
+    }
   } else {
     return;
   }
-}  
+}
 // função para doença
-function illnes(){
+function illnes() {
   if (selected[17].checked) {
-    moreSeriousCoverage.style.display = 'block'
-}else{
-  return;
+    moreSeriousCoverage.style.display = "block";
+  } else {
+    return;
+  }
 }
-}
-// 
+//
 // função para mais doenças
 function rangeMoreIllness(value) {
   if (selected[18].checked) {
     // seriousCoverage.innerHTML = value;
     bdgeillnes.innerHTML = value;
-}else{
-  return;
+  } else {
+    return;
+  }
 }
-}
-
-
 
 // como capturar o valor dos selects
 /*

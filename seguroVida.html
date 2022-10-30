@@ -128,7 +128,7 @@
                 <label for="age" class="">Qual a sua idade?</label> </h4>
                 <div class="container_choice">
                   <i class='far fa-calendar-alt icon_form'></i>
-                  <input id="ageRange" type="range" class="age_range" value="18" min="18" max="70" oninput="rangeAge(this.value)" step="1"> <br>
+                  <input id="ageRange" type="range" class="age_range" value="18" min="18" max="70" oninput="rangeAge(this.value), showAge(this.value)" step="1"> <br>
                   <span class="font-weight-bolder h2" id="numberAge">18</span><small class="font-weight-bold"> Anos</small>
   
                 </div>
@@ -817,7 +817,7 @@
   
             <div class="container_choice">
               <i class="fa-solid fa-shield-halved icon_form "></i>
-              <input id="cover" type="range" class="age_range" value="0" min="30000.00" max="300000.00" step="5000.00" oninput="rangemoney(this.value)">
+              <input id="coverRange" type="range" class="age_range" value="0" min="30000.00" max="300000.00" step="5000.00" oninput="rangeMoney(this.value), showCover(this.value)" oninput="showPrice()">
               <span class="font-weight-bolder h2" id="numberMoney">30.000,00</span>
             </div>
           </div>
