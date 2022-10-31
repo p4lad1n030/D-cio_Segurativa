@@ -86,7 +86,7 @@ function showPrice() {
 }
 function setValue(age, cover) {
   if(!age  || age  < 36){
-    if(cover < 42000) {
+    if(!cover || cover < 42000) {
       principalValue.innerText = '16'
       cents.innerText = '07'
     }else if (cover < 56000) {
@@ -121,7 +121,7 @@ function setValue(age, cover) {
       cents.innerText = '60'
     }
   }else if(age < 41){
-    if(cover < 42000) {
+    if(!cover || cover < 42000) {
       principalValue.innerText = '19'
       cents.innerText = '19'
     }else if (cover < 56000) {
@@ -154,6 +154,181 @@ function setValue(age, cover) {
     }else if (cover < 301000) {
       principalValue.innerText = '140'
       cents.innerText = '40'
+    }
+  }else if (age < 46) {
+    if(!cover || cover < 42000) {
+      principalValue.innerText = '22'
+      cents.innerText = '22'
+    }else if (cover < 56000) {
+      principalValue.innerText = '29'
+      cents.innerText = '81'      
+    }else if (cover < 71000){
+      principalValue.innerText = '37'
+      cents.innerText = '94'
+    }else if (cover < 86000) {
+      principalValue.innerText = '46'
+      cents.innerText = '07'
+    }else if (cover < 101000) {
+      principalValue.innerText = '54'
+      cents.innerText = '20'
+    }else if (cover < 126000) {
+      principalValue.innerText = '67'
+      cents.innerText = '75'
+    }else if (cover < 151000) {
+      principalValue.innerText = '81'
+      cents.innerText = '30'
+    }else if (cover < 176000) {
+      principalValue.innerText = '94'
+      cents.innerText = '85'
+    }else if (cover < 201000) {
+      principalValue.innerText = '108'
+      cents.innerText = '40'
+    }else if (cover < 251000) {
+      principalValue.innerText = '135'
+      cents.innerText = '50'
+    }else if (cover < 301000) {
+      principalValue.innerText = '162'
+      cents.innerText = '60'
+    }
+  }else if (age < 51) {
+    if(!cover || cover < 42000) {
+      principalValue.innerText = '26'
+      cents.innerText = '81'
+    }else if (cover < 56000) {
+      principalValue.innerText = '35'
+      cents.innerText = '97'      
+    }else if (cover < 71000){
+      principalValue.innerText = '45'
+      cents.innerText = '78'
+    }else if (cover < 86000) {
+      principalValue.innerText = '55'
+      cents.innerText = '59'
+    }else if (cover < 101000) {
+      principalValue.innerText = '65'
+      cents.innerText = '40'
+    }else if (cover < 126000) {
+      principalValue.innerText = '81'
+      cents.innerText = '75'
+    }else if (cover < 151000) {
+      principalValue.innerText = '98'
+      cents.innerText = '10'
+    }else if (cover < 176000) {
+      principalValue.innerText = '114'
+      cents.innerText = '45'
+    }else if (cover < 201000) {
+      principalValue.innerText = '130'
+      cents.innerText = '80'
+    }else if (cover < 251000) {
+      principalValue.innerText = '163'
+      cents.innerText = '50'
+    }else if (cover < 301000) {
+      principalValue.innerText = '196'
+      cents.innerText = '20'
+    }
+  }else if (age < 56) {
+    if(!cover || cover < 42000) {
+      principalValue.innerText = '39'
+      cents.innerText = '89'
+    }else if (cover < 56000) {
+      principalValue.innerText = '53'
+      cents.innerText = '52'      
+    }else if (cover < 71000){
+      principalValue.innerText = '68'
+      cents.innerText = '11'
+    }else if (cover < 86000) {
+      principalValue.innerText = '82'
+      cents.innerText = '71'
+    }else if (cover < 101000) {
+      principalValue.innerText = '97'
+      cents.innerText = '30'
+    }else if (cover < 126000) {
+      principalValue.innerText = '121'
+      cents.innerText = '63'
+    }else if (cover < 151000) {
+      principalValue.innerText = '145'
+      cents.innerText = '95'
+    }else if (cover < 176000) {
+      principalValue.innerText = '170'
+      cents.innerText = '28'
+    }else if (cover < 201000) {
+      principalValue.innerText = '194'
+      cents.innerText = '60'
+    }else if (cover < 251000) {
+      principalValue.innerText = '243'
+      cents.innerText = '25'
+    }else if (cover < 301000) {
+      principalValue.innerText = '291'
+      cents.innerText = '91'
+    } 
+  }else if (age < 61) {
+    if(!cover || cover < 42000) {
+      principalValue.innerText = '54'
+      cents.innerText = '37'
+    }else if (cover < 56000) {
+      principalValue.innerText = '72'
+      cents.innerText = '93'      
+    }else if (cover < 71000){
+      principalValue.innerText = '92'
+      cents.innerText = '82'
+    }else if (cover < 86000) {
+      principalValue.innerText = '112'
+      cents.innerText = '71'
+    }else if (cover < 101000) {
+      principalValue.innerText = '132'
+      cents.innerText = '60'
+    }else if (cover < 126000) {
+      principalValue.innerText = '165'
+      cents.innerText = '75'
+    }else if (cover < 151000) {
+      principalValue.innerText = '198'
+      cents.innerText = '90'
+    }else if (cover < 176000) {
+      principalValue.innerText = '232'
+      cents.innerText = '05'
+    }else if (cover < 201000) {
+      principalValue.innerText = '265'
+      cents.innerText = '20'
+    }else if (cover < 251000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
+    }else if (cover < 301000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
+    }
+  }else if (age < 65) {
+    if(!cover || cover < 42000) {
+      principalValue.innerText = '93'
+      cents.innerText = '85'
+    }else if (cover < 56000) {
+      principalValue.innerText = '125'
+      cents.innerText = '90'      
+    }else if (cover < 71000){
+      principalValue.innerText = '160'
+      cents.innerText = '23'
+    }else if (cover < 86000) {
+      principalValue.innerText = '194'
+      cents.innerText = '57'
+    }else if (cover < 101000) {
+      principalValue.innerText = '228'
+      cents.innerText = '90'
+    }else if (cover < 126000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
+    }else if (cover < 151000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
+    }else if (cover < 176000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
+    }else if (cover < 201000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
+    }else if (cover < 251000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
+    }else if (cover < 301000) {
+      principalValue.innerText = '--'
+      cents.innerText = '--'
     }
   }
 }
