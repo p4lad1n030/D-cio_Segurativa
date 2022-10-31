@@ -16,10 +16,14 @@ const principalValue = document.getElementById("principalValue");
 const ageRange = document.getElementById("ageRange");
 const coverRange = document.getElementById("coverRange");
 const ipaValue = document.getElementById("ipaValue");
-
+const nameUser = document.getElementById('name')
+const email = document.getElementById('email')
+const phone = document.getElementById('phone')
+const send = document.getElementById('send')
+const formHeader = document.getElementById('formHeader')
 var age;
 var cover;
-
+var userName;
 // fim
 /*
 array com os inputs
@@ -48,7 +52,11 @@ inputs do header
 20:input.age_range */
 
 // função para tratar o formulario do header
-
+formHeader.onsubmit = (e)=>{
+  e.preventDefault();
+  // console.log(formHeader.nameUser.value)
+  console.log('clicou')
+}
 // ==
 function rangeAge(value) {
   numberAge.innerHTML = value
@@ -80,8 +88,6 @@ function showPrice() {
     cover = e.target.value;
     return cover;
   });
-// principalValue, cents
-  console.log(parseInt(age), parseInt(cover))
   setValue(parseInt(age), parseInt(cover))
 }
 function setValue(age, cover) {

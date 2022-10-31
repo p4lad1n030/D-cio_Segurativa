@@ -73,18 +73,21 @@
         </div>
 
         <div class="col-md-5">
-          <div class="d-flex flex-column form mx-auto">
-            <p class="text-warning text-center mb-n2 mt-3 h3">Simular</p>
-            <h3 class="text-center form_title">Seguro de Vida</h3>
-            <p class="text-center text-light">Conte um pouco sobre você</p>
-            <label for="name" class="mr-auto text-light mb-0">Nome</label>
-            <input id="name" type="text" class="">
-            <label for="name" class="mr-auto text-light mb-0">E-mail</label>
-            <input id="email" type="email" class="">
-            <label for="name" class="mr-auto text-light mb-0">Telefone</label>
-            <input id="phone" type="tel" class="">
-            <button class="btn btn-outline-warning mt-4 text-white" type="button">Enviar</button>
-          </div>
+          <form id="formHeader">
+            
+            <div class="d-flex flex-column form mx-auto">
+              <p class="text-warning text-center mb-n2 mt-3 h3">Simular</p>
+              <h3 class="text-center form_title">Seguro de Vida</h3>
+              <p class="text-center text-light">Conte um pouco sobre você</p>
+              <label for="name" class="mr-auto text-light mb-0">Nome</label>
+              <input id="name" type="text" class="">
+              <label for="email" class="mr-auto text-light mb-0">E-mail</label>
+              <input id="email" type="email" class="">
+              <label for="phone" class="mr-auto text-light mb-0">Telefone</label>
+              <input id="phone" type="tel" class="">
+              <button id="send" class="btn btn-outline-warning mt-4 text-white" type="button" >Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
       
@@ -1086,12 +1089,12 @@
         <div class=" simulator mx-auto">
             <span class="img_card_blue"><img src="./assets/img/Dark-logotipo-segurativa.png" alt="" class="img-fluid"></span>
             <h3 class=" al text-center text-warning mt-n4">Seguro a partir de </h3>
-            <div class="table-responsive">
+            
               <div class="d-flex justify-content-center align-content-center">
                 <span class="text-warning h6 font-weight-bold price_l">R$</span>
                 <h1 id="principalValue" class="text-light price_center font-weight-bold ">00</h1>
                 <h3 class="text-light font-weight-bold price_right">,<span id="cents">00</span>*</h3>
-              </div>
+              
             </div>
             <p class="h2 text-warning font-weight-bold per_month">por mês</p>
             <button class="btn-outline-warning btn br  text-light mt-n1" id="sent">CONTINUAR</button>
