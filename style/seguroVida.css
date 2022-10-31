@@ -94,16 +94,16 @@
 .simulator img {
   width: 196px;
 }
-.price_l{
+.price_l {
   margin-top: 14px;
-  text-shadow:  1px 2px 5px black;
+  text-shadow: 1px 2px 5px black;
   font-size: 3rem;
 }
-.price_center{
+.price_center {
   position: relative;
   top: 0;
   font-size: 6rem;
-  text-shadow:  1px 2px 5px black;
+  text-shadow: 1px 2px 5px black;
 }
 .price_right {
   margin-top: 20px;
@@ -143,13 +143,11 @@
   margin: 0 auto;
   margin-bottom: 2px;
 }
-.gender{
+.gender {
   position: relative;
   left: -6%;
   width: 100%;
-
 }
-
 
 .options_safe h4 {
   color: #250050;
@@ -219,10 +217,11 @@
 }
 .bgb {
   padding: 25px;
-  background-color: #0099FF;
+  background-color: #0099ff;
 }
-.bgb h1, h3 {
-  text-shadow:  1px 2px 5px black;
+.bgb h1,
+h3 {
+  text-shadow: 1px 2px 5px black;
   color: #250050;
 }
 .differentials {
@@ -235,9 +234,9 @@
   box-sizing: border-box;
   box-shadow: 3px 3px 3px rgb(66 63 63);
 }
-.img_card_blue{
+.img_card_blue {
   position: relative;
-  top:-18px;
+  top: -18px;
 }
 /* responsive */
 
@@ -247,7 +246,7 @@
     top: 3px;
     width: 35px;
     margin-left: -271px;
-}
+  }
 
   .img_foo_1 {
     position: relative;
@@ -259,7 +258,7 @@
     margin-top: 11px;
     text-shadow: 1px 2px 5px black;
     font-size: 3rem;
-}
+  }
   .price_center {
     position: relative;
     top: 16px;
@@ -270,7 +269,7 @@
   .price_right {
     margin-top: 6px;
     font-size: 3.4rem;
-}
+  }
 }
 
 @media screen and (min-width: 397px) {
@@ -312,23 +311,22 @@
     box-sizing: border-box;
     padding-inline: 10px;
   }
-  .price_l{
-      position: relative;
-      top: 1px;
-      text-shadow: 1px 2px 5px black;
-      font-size: 5vw;
-  
-  }
-  .price_center{
+  .price_l {
     position: relative;
-    top:35px;
+    top: 1px;
+    text-shadow: 1px 2px 5px black;
+    font-size: 5vw;
+  }
+  .price_center {
+    position: relative;
+    top: 35px;
     font-size: 4rem;
-    text-shadow:  1px 2px 5px black;
+    text-shadow: 1px 2px 5px black;
   }
   .price_right {
     position: relative;
     top: 18px;
-    margin-top: -10px; 
+    margin-top: -10px;
     font-size: 5vw;
   }
 }
@@ -395,7 +393,7 @@
     top: 10px;
     font-size: 7rem;
     text-shadow: 1px 2px 5px black;
-}
+  }
 }
 @media screen and (min-width: 1035px) {
   .per_month {
@@ -432,11 +430,10 @@
     padding-inline: 10px;
   }
 }
-@media screen and (min-width:1097px) {
-
+@media screen and (min-width: 1097px) {
   .per_month {
     margin-top: -13px;
-}
+  }
 }
 @media screen and(min-width: 1200px) {
   .price_center {
@@ -444,9 +441,9 @@
     top: 10px;
     font-size: 9rem;
     text-shadow: 1px 2px 5px black;
+  }
 }
-}
-@media screen and (min-width: 1376px){
+@media screen and (min-width: 1376px) {
   .simulator {
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -464,18 +461,18 @@
     top: 1px;
     text-shadow: 1px 2px 5px black;
     font-size: 5vw;
-}
-.price_center {
-  position: relative;
-  top: 10px;
-  font-size: 10rem;
-  text-shadow: 1px 2px 5px black;
-}
+  }
+  .price_center {
+    position: relative;
+    top: 10px;
+    font-size: 10rem;
+    text-shadow: 1px 2px 5px black;
+  }
   .price_right {
     position: relative;
     top: 10px;
     font-size: 5rem;
-}
+  }
 }
 @media screen and (min-width: 1580px) {
   .simulator {
@@ -495,16 +492,21 @@
     top: 10px;
     font-size: 13rem;
     text-shadow: 1px 2px 5px black;
+  }
+  .price_right {
+    position: relative;
+    top: 16px;
+    font-size: 5rem;
+  }
 }
-}
-@media screen and (min-width: 1691px){
+@media screen and (min-width: 1691px) {
   .simulator {
     height: auto;
   }
   .price_right {
     position: relative;
-    top: 36px;
-    font-size: 5vw;
+    top: 15px;
+    font-size: 5rem;
 }
 }
 
@@ -517,9 +519,8 @@
   }
   .price_right {
     position: relative;
-    top: 18px;
-    margin-top: -10px;
-    font-size: 5vw;
+    top: 19px;
+    font-size: 5rem;
 }
 }
 @media screen and (min-width: 1920px) {
@@ -528,20 +529,25 @@
   }
   .simulator {
     height: auto;
+  }
+  .price_center {
+    position: relative;
+    top: 41px;
+    font-size: 13rem;
+    text-shadow: 1px 2px 5px black;
 }
-.price_right {
-  position: relative;
-  top: 71px;
-  margin-top: -10px;
-  font-size: 5vw;
-}
-.price_l {
-  position: relative;
-  top: 49px;
-  text-shadow: 1px 2px 5px black;
-  font-size: 5vw;
-}
-.al {
-  margin-bottom: -52px;
-}
+  .price_right {
+    position: relative;
+    top: 44px;
+    font-size: 5rem;
+  }
+  .price_l {
+    position: relative;
+    top: 49px;
+    text-shadow: 1px 2px 5px black;
+    font-size: 5vw;
+  }
+  .al {
+    margin-bottom: -52px;
+  }
 }
