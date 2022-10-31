@@ -16,6 +16,7 @@ const principalValue = document.getElementById("principalValue");
 const ageRange = document.getElementById("ageRange");
 const coverRange = document.getElementById("coverRange");
 const ipaValue = document.getElementById("ipaValue");
+
 var age;
 var cover;
 
@@ -49,17 +50,14 @@ inputs do header
 // função para tratar o formulario do header
 
 // ==
-
-const rangeAge = function (value) {
-  numberAge.innerHTML = value;
-  return (age = value);
-};
-const rangeMoney = function (value) {
+function rangeAge(value) {
+  numberAge.innerHTML = value
+}
+function rangeMoney(value) {
   numberMoney.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
   }).format(value);
-
   labelDeath.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -69,26 +67,96 @@ const rangeMoney = function (value) {
     style: "currency",
     currency: "BRL",
   }).format(value);
-  return cover = new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  }).format(value);
-  
-};
+ };
 
 // função para exibir o valor no quadro de orçamento
-function showAge(arg) {
-  age = arg
-  // console.log(age)
-  return age
-}
-function showCover(arg) {
-  cover = arg
-  // console.log(cover);
-  return cover
-}
-console.log(showCover)
 
+function showPrice() {
+  ageRange.addEventListener("input", function (e) {
+    age = e.target.value;
+    return age;
+  });
+  coverRange.addEventListener("input", (e) => {
+    cover = e.target.value;
+    return cover;
+  });
+// principalValue, cents
+  console.log(parseInt(age), parseInt(cover))
+  setValue(parseInt(age), parseInt(cover))
+}
+function setValue(age, cover) {
+  if(!age  || age  < 36){
+    if(cover < 42000) {
+      principalValue.innerText = '16'
+      cents.innerText = '07'
+    }else if (cover < 56000) {
+      principalValue.innerText = '21'
+      cents.innerText = '56'      
+    }else if (cover < 71000){
+      principalValue.innerText = '27'
+      cents.innerText = '44'
+    }else if (cover < 86000) {
+      principalValue.innerText = '33'
+      cents.innerText = '32'
+    }else if (cover < 101000) {
+      principalValue.innerText = '39'
+      cents.innerText = '20'
+    }else if (cover < 126000) {
+      principalValue.innerText = '49'
+      cents.innerText = '00'
+    }else if (cover < 151000) {
+      principalValue.innerText = '58'
+      cents.innerText = '80'
+    }else if (cover < 176000) {
+      principalValue.innerText = '68'
+      cents.innerText = '60'
+    }else if (cover < 201000) {
+      principalValue.innerText = '78'
+      cents.innerText = '40'
+    }else if (cover < 251000) {
+      principalValue.innerText = '98'
+      cents.innerText = '00'
+    }else if (cover < 301000) {
+      principalValue.innerText = '117'
+      cents.innerText = '60'
+    }
+  }else if(age < 41){
+    if(cover < 42000) {
+      principalValue.innerText = '19'
+      cents.innerText = '19'
+    }else if (cover < 56000) {
+      principalValue.innerText = '25'
+      cents.innerText = '74'      
+    }else if (cover < 71000){
+      principalValue.innerText = '32'
+      cents.innerText = '76'
+    }else if (cover < 86000) {
+      principalValue.innerText = '39'
+      cents.innerText = '78'
+    }else if (cover < 101000) {
+      principalValue.innerText = '48'
+      cents.innerText = '80'
+    }else if (cover < 126000) {
+      principalValue.innerText = '58'
+      cents.innerText = '50'
+    }else if (cover < 151000) {
+      principalValue.innerText = '70'
+      cents.innerText = '20'
+    }else if (cover < 176000) {
+      principalValue.innerText = '81'
+      cents.innerText = '90'
+    }else if (cover < 201000) {
+      principalValue.innerText = '93'
+      cents.innerText = '60'
+    }else if (cover < 251000) {
+      principalValue.innerText = '117'
+      cents.innerText = '00'
+    }else if (cover < 301000) {
+      principalValue.innerText = '140'
+      cents.innerText = '40'
+    }
+  }
+}
 // =====
 function rangeMoreIllness(value) {
   if (illnessMore.checked) {

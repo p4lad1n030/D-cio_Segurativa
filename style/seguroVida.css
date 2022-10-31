@@ -95,20 +95,19 @@
   width: 196px;
 }
 .price_l{
-  margin-top: -10px;
+  margin-top: 14px;
   text-shadow:  1px 2px 5px black;
   font-size: 3rem;
 }
 .price_center{
   position: relative;
-  top: -14%;
-  margin-top: -45px;
-  font-size: 102pt;
+  top: 0;
+  font-size: 6rem;
   text-shadow:  1px 2px 5px black;
 }
 .price_right {
-  margin-top: -10px;
-  font-size: 3.4rem;
+  margin-top: 20px;
+  font-size: 2rem;
 }
 .options_safe {
   background-color: #e9f4fb;
@@ -265,7 +264,7 @@
     position: relative;
     top: 16px;
     margin-top: -45px;
-    font-size: 102pt;
+    font-size: 6rem;
     text-shadow: 1px 2px 5px black;
   }
   .price_right {
@@ -322,8 +321,8 @@
   }
   .price_center{
     position: relative;
-    top: 14px;
-    font-size: 16vw;
+    top:35px;
+    font-size: 4rem;
     text-shadow:  1px 2px 5px black;
   }
   .price_right {
@@ -353,6 +352,12 @@
     background-image: url("../assets/img/bgSeVida1500x570.png");
     background-size: cover;
   }
+  .price_center {
+    position: relative;
+    top: 25px;
+    font-size: 7rem;
+    text-shadow: 1px 2px 5px black;
+  }
 }
 @media screen and (min-width: 863px) {
   .logo {
@@ -366,7 +371,7 @@
     margin-left: 25px;
   }
   .per_month {
-    margin-top: -18px;
+    margin-top: 3px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -377,7 +382,7 @@
     display: block;
   }
   .per_month {
-    margin-top: -31px;
+    margin-top: -16px;
   }
   .inventando_coisas {
     margin-left: 24px;
@@ -385,10 +390,16 @@
   .inventando {
     margin-right: 24px;
   }
+  .price_center {
+    position: relative;
+    top: 10px;
+    font-size: 7rem;
+    text-shadow: 1px 2px 5px black;
+}
 }
 @media screen and (min-width: 1035px) {
   .per_month {
-    margin-top: -31px;
+    margin-top: -8px;
   }
 }
 @media screen and (min-width: 1075px) {
@@ -406,7 +417,7 @@
     background-size: cover;
   }
   .per_month {
-    margin-top: -31px;
+    margin-top: -13px;
   }
   .simulator {
     position: -webkit-sticky; /* Safari */
@@ -424,7 +435,15 @@
 @media screen and (min-width:1097px) {
 
   .per_month {
-    margin-top: -35px;
+    margin-top: -13px;
+}
+}
+@media screen and(min-width: 1200px) {
+  .price_center {
+    position: relative;
+    top: 10px;
+    font-size: 9rem;
+    text-shadow: 1px 2px 5px black;
 }
 }
 @media screen and (min-width: 1376px){
@@ -440,10 +459,22 @@
     box-sizing: border-box;
     padding-inline: 10px;
   }
+  .price_l {
+    position: relative;
+    top: 1px;
+    text-shadow: 1px 2px 5px black;
+    font-size: 5vw;
+}
+.price_center {
+  position: relative;
+  top: 10px;
+  font-size: 10rem;
+  text-shadow: 1px 2px 5px black;
+}
   .price_right {
     position: relative;
-    top: 26px;
-    font-size: 5vw;
+    top: 10px;
+    font-size: 5rem;
 }
 }
 @media screen and (min-width: 1580px) {
@@ -459,6 +490,12 @@
     box-sizing: border-box;
     padding-inline: 10px;
   }
+  .price_center {
+    position: relative;
+    top: 10px;
+    font-size: 13rem;
+    text-shadow: 1px 2px 5px black;
+}
 }
 @media screen and (min-width: 1691px){
   .simulator {

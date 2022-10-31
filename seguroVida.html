@@ -128,7 +128,7 @@
                 <label for="age" class="">Qual a sua idade?</label> </h4>
                 <div class="container_choice">
                   <i class='far fa-calendar-alt icon_form'></i>
-                  <input id="ageRange" type="range" class="age_range" value="18" min="18" max="70" oninput="rangeAge(this.value), showAge(this.value)" step="1"> <br>
+                  <input id="ageRange" type="range" class="age_range" value="18" min="18" max="70" oninput="showPrice(), rangeAge(this.value)" step="1"> <br>
                   <span class="font-weight-bolder h2" id="numberAge">18</span><small class="font-weight-bold"> Anos</small>
   
                 </div>
@@ -814,12 +814,13 @@
               </div>
             </div>
             <h4 class="">Cobertura básica </h4>
-  
+  <!--    -->
             <div class="container_choice">
               <i class="fa-solid fa-shield-halved icon_form "></i>
-              <input id="coverRange" type="range" class="age_range" value="0" min="30000.00" max="300000.00" step="5000.00" oninput="rangeMoney(this.value), showCover(this.value)" oninput="showPrice()">
+              <input id="coverRange" type="range" class="age_range" value="30000" min="30000" max="300000" step="1000" oninput="showPrice(), rangeMoney(this.value)" >
               <span class="font-weight-bolder h2" id="numberMoney">30.000,00</span>
             </div>
+            <!-- rangeMoney(this.value), -->
           </div>
   <!-- deathNatural -->
           <!-- <div class="options_safe">
@@ -1085,10 +1086,12 @@
         <div class=" simulator mx-auto">
             <span class="img_card_blue"><img src="./assets/img/Dark-logotipo-segurativa.png" alt="" class="img-fluid"></span>
             <h3 class=" al text-center text-warning mt-n4">Seguro a partir de </h3>
-            <div class="d-flex justify-content-center align-content-center">
-              <span class="text-warning h6 font-weight-bold price_l">R$</span>
-              <h1 id="principalValue" class="text-light price_center font-weight-bold ">72</h1>
-              <h3 class="text-light font-weight-bold price_right">,<span id="cents">20</span>*</h3>
+            <div class="table-responsive">
+              <div class="d-flex justify-content-center align-content-center">
+                <span class="text-warning h6 font-weight-bold price_l">R$</span>
+                <h1 id="principalValue" class="text-light price_center font-weight-bold ">00</h1>
+                <h3 class="text-light font-weight-bold price_right">,<span id="cents">00</span>*</h3>
+              </div>
             </div>
             <p class="h2 text-warning font-weight-bold per_month">por mês</p>
             <button class="btn-outline-warning btn br  text-light mt-n1" id="sent">CONTINUAR</button>
