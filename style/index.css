@@ -7,15 +7,15 @@
   font-family: "Paragraph";
   src: url("../assets/font/Izmir/Demo_Fonts/Fontspring-DEMO-izmir-black.otf");
 }
-h1, h2, h3, h4, h5, h6  {
+/* h1, h2, h3, h4, h5, h6  {
   font-family:"Title";
-}
+} */
 
-p, a {
+/* p, a {
   text-shadow: 1px 1px 1px rgb(87, 84, 84);
   font-weight: normal!important;
   font-family: "Paragraph";
-}
+} */
 .logo {
   width: 38vw;
 }
