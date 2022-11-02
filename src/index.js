@@ -466,7 +466,7 @@ sent.onclick = (_) => {
   let plainCents = cents.innerText
   // 18 Masculino Não Fumante   Escolhi a cobertura básica no valor de: 30.000,00 sem cobertura em dobro sem cobertura ipa sem antecipação por doença sem cobertura para despesas medico-hospitalares Sem cobertura para doenças graves 00 00
   window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=
-  Tenho%20${ ageUser},%20
+  Tenho%20${ ageUser}%20anos,%20
   do sexo:%20${ userGender()},%20
   ${ userSmoke()},%20
   eu%20trabalho%20como:%20${ profession},%20
