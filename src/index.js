@@ -37,32 +37,8 @@ var age;
 var cover;
 var userName;
 // fim
-{
-  /*
-array com os inputs
-inputs do header
-0:input#name  nome
-1:input#email  email
-2:input#phone  fone
 
-3:input#ageRange    idade
-4:input#masc          sexo
-5:input#fem.ml-1      
-6:input#smokno.ml-1   fuma
-7:input#smoksim.ml-1     
-8:input#job.age_range       trabalho
-9:input.age_range            salario
-10:input.age_range
-11:input#deathNatural.ml-1     morte natural
-12:input#deathAccidental.ml-1   cober double
-13:input#invalid.ml-1      invalidez
-14:input#noAntecipation.ml-1    antdoen
-15:input#yesAntecipation.ml-1
-16:input#spending.ml-1        despesmedi
-17:input#coverage.ml-1     cobert doen grav
-18:input.age_range        +7doen grav
-19:input#illnessMore.ml-1
-20:input.age_range */
+
 
   // função para tratar o formulario do header
   formHeader.onsubmit = (e) => {
@@ -401,13 +377,12 @@ inputs do header
   // função para mais doenças
   function rangeMoreIllness(value) {
     if (selected[18].checked) {
-      // seriousCoverage.innerHTML = value;
       bdgeillnes.innerHTML = value;
     } else {
       return;
     }
   }
-}
+
 
 let ageUser = numberAge.innerHTML;
 userGender = function () {
@@ -431,9 +406,7 @@ function userMoney(s) {
   showMoney.innerText = `minha renda é de : ${s}`;
 }
 
-// monthlyIncome.addEventListener("input", function () {
-//   return this.value;
-// });
+
 
 coverIpa = (_) => {
   if (selected[12].checked) {
@@ -445,10 +418,11 @@ coverIpa = (_) => {
     return ipa;
   }
 };
-// função para pegar se quer antecipação por doença
+
 
 // função para enviar o orçamento com as informações
 sent.onclick = (_) => {
+  let ageUser = numberAge.innerText
   let basicliCover = `Escolhi a cobertura básica no valor de: ${numberMoney.innerText}`;
   let coverLabelDeath = labelDeath.checked
     ? `cobertura em dobro no valor ${labelDeath.innerText}`
@@ -464,13 +438,13 @@ sent.onclick = (_) => {
   let moreIllnes = coverage1.checked ? `Sem cobertura para doenças graves` : `Sem cobertura para doenças graves`
   let plainMoney = principalValue.innerText
   let plainCents = cents.innerText
-  // 18 Masculino Não Fumante   Escolhi a cobertura básica no valor de: 30.000,00 sem cobertura em dobro sem cobertura ipa sem antecipação por doença sem cobertura para despesas medico-hospitalares Sem cobertura para doenças graves 00 00
+
   window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=
   Tenho%20${ ageUser}%20anos,%20
   do sexo:%20${ userGender()},%20
   ${ userSmoke()},%20
   eu%20trabalho%20como:%20${ profession},%20
-  recebo%20em%20média%20${ userMoney},%20
+  ${ userMoney},%20
   ${ basicliCover},%20
   ${ coverLabelDeath},%20
   ${ coverIpa()},%20
