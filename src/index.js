@@ -68,7 +68,7 @@ inputs do header
     let nameInput = nameUser.value;
     let emailInput = email.value;
     let phoneInput = phone.value;
-    window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=Olá%20me%20chamo%20${nameInput},%20com%20email:%20${emailInput}%20e%20o%20telefone:%20${phoneInput}%20e%20gostaria%20de%20mais%20&shydetalhes%20do%20seguro%20de%20vida.`;
+    window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=Olá%20me%20chamo%20${nameInput},%20com%20email:%20${emailInput}%20e%20o%20telefone:%20${phoneInput}%20e%20gostaria%20de%20mais%20detalhes%20do%20seguro%20de%20vida.`;
   };
   // ==
   function rangeAge(value) {
