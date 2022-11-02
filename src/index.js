@@ -67,7 +67,6 @@ inputs do header
   // função para tratar o formulario do header
   formHeader.onsubmit = (e) => {
     e.preventDefault();
-    // console.log(nameUser.value)
     let nameInput = nameUser.value;
     let emailInput = email.value;
     let phoneInput = phone.value;
@@ -105,7 +104,6 @@ inputs do header
       return cover;
     });
     setValue(parseInt(age), parseInt(cover));
-    console.log(principalValue.innerHTML, cents.innerHTML);
   }
   function setValue(age, cover) {
     if (!age || age < 36) {
@@ -427,7 +425,6 @@ userSmoke = (_) => {
   }
 };
 userJob = function (e) {
-  console.log(e);
   showProfession.innerHTML = e;
 };
 function userMoney(s) {
@@ -448,7 +445,6 @@ coverIpa = (_) => {
     return ipa;
   }
 };
-console.log(selected);
 // função para pegar se quer antecipação por doença
 
 // função para enviar o orçamento com as informações
