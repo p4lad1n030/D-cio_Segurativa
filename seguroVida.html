@@ -240,9 +240,9 @@
             
             <div class="options_safe">
               <i class='fas fa-toolbox icon_form'></i>
-              <input type="text" class="age_range" name="inJob" id="job" list="jobs" aria-label="jobss">
+              <input type="text" class="age_range" name="inJob" id="job" list="jobs" aria-label="jobss" onchange="userJob(this.value)">
               <!-- abaixo foi abreviadoo datalist -->
-              <datalist id="jobs">
+              <datalist id="jobs" >
                 <option value="Escolha sua profissão" selected></option>
                 <option value="Abatedor">Abatedor</option>
                 <option value="açougueiro">açougueiro</option>
@@ -778,7 +778,7 @@
             <h4 class="">Em média, quanto você ganha por mês? </h4>
             <div class="conteiner_choice">
               <i class='far fa-money-bill-alt icon_form'></i>
-              <input type="text" class="age_range" aria-label="moneyy" list="money" >
+              <input type="text" class="age_range" name="monthlyIncome"  aria-label="moneyy" list="money" >
               <datalist id="money">
                 <option value="Até R$ 800.00"></option>
                 <option value="De R$ 1301.00 a R$ 2500.00"></option>
@@ -1024,7 +1024,26 @@
   
                   <!-- Modal body -->
                   <div class="modal-body">
-                    Modal body..seriousCoverage
+                    Consiste no pagamento do Capital Segurado contratado, em caso de sobrevivência do segurado 30 (trinta) dias após o diagnóstico de uma das doenças cobertas ou da realização de um procedimento médico coberto. São eles:
+1.	Acidente Vascular Encefálico (Derrame)
+2.	Câncer
+3.	Cirurgia de Revascularização Miocárdica com Implante de Pontes Vasculares nas Artérias Coronarianas (Bypass): Submeter-se à cirurgia cardíaca de revascularização do miocárdio para correção de estreitamento ou oclusão de uma ou mais artérias coronarianas com o implante de enxertos/pontes vasculares (bypass). Cirurgia cardíaca com esternotomia completa (divisão vertical do osso esterno) e procedimentos minimamente invasivos (esternotomia parcial ou toracotomia) estão cobertos.
+4.	Infarto Agudo do Miocárdio
+5.	Insuficiência Renal Terminal
+6.	Transplantes de Órgãos
+7.	Cirurgia da Aorta
+8.	Cirurgia das Valvas Cardíacas
+9.	Esclerose Múltipla
+10.	Doença de Alzheimer
+Podendo adicionar também a cobertura:
+11.	Perda Total da Audição
+12.	Perda Total da Fala
+13.	Perda Total da Visão (Cegueira)
+14.	Embolia Pulmonar ou Tromboembolismo Pulmonar (TEP)
+15.	Paralisia de Membros
+16.	Doença de Parkinson
+17.	Queimadura
+Quando o segurado atingir 70 (setenta) anos de idade esta cobertura será automaticamente excluída da apólice.
                   </div>
   
                   <!-- Modal footer -->
