@@ -83,7 +83,6 @@
   border-radius: 13px;
 }
 .simulator {
-  margin-top: 30px;
   width: 100%;
   height: auto;
   background-color: #323f9f;
@@ -219,9 +218,11 @@
   padding: 25px;
   background-color: #0099ff;
 }
-.bgb h1,
-h3 {
+.bgb h1 {
   text-shadow: 1px 2px 5px black;
+  color: #250050;
+}
+.bgb h3 {
   color: #250050;
 }
 .differentials {
@@ -237,6 +238,14 @@ h3 {
 .img_card_blue {
   position: relative;
   top: -18px;
+}
+.br {
+  width: 200px;
+  margin-bottom: 10px!important;
+}
+.btn_inventado_coisinhas {
+  width: 250px;
+  font-size: 1.5rem;
 }
 /* responsive */
 
@@ -303,7 +312,6 @@ h3 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 30px;
-    margin-top: 30px;
     width: 100%;
     height: auto;
     background-color: #323f9f;
@@ -421,7 +429,6 @@ h3 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 30px;
-    margin-top: 30px;
     width: 100%;
     height: auto;
     background-color: #323f9f;
@@ -448,7 +455,6 @@ h3 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 30px;
-    margin-top: 30px;
     width: 100%;
     height: auto;
     background-color: #323f9f;
@@ -479,7 +485,6 @@ h3 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 30px;
-    margin-top: 30px;
     width: 100%;
     height: auto;
     background-color: #323f9f;

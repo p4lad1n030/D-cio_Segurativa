@@ -27,9 +27,12 @@ const radsmok = document.getElementsByName("radsmok");
 const inJob = document.getElementsByName("inJob")[0];
 const monthlyIncome = document.getElementsByName("monthlyIncome")[0];
 const showProfession = document.getElementById("showProfession");
-const showMoney = document.getElementById('showMoney')
-const antecipationTogle = document.getElementById('antecipationTogle')
-
+const showMoney = document.getElementById("showMoney");
+const antecipationTogle = document.getElementById("antecipationTogle");
+const deathAccidental = document.getElementById("deathAccidental");
+const noAntecipation = document.getElementById("noAntecipation");
+const spending = document.getElementById("spending");
+const coverage1 = document.getElementById("coverage1");
 var age;
 var cover;
 var userName;
@@ -428,7 +431,7 @@ userJob = function (e) {
   showProfession.innerHTML = e;
 };
 function userMoney(s) {
-  showMoney.innerText = s
+  showMoney.innerText = `minha renda é de : ${s}`;
 }
 
 // monthlyIncome.addEventListener("input", function () {
@@ -436,38 +439,50 @@ function userMoney(s) {
 // });
 
 coverIpa = (_) => {
-  if (selected[13].checked) {
+  if (selected[12].checked) {
     let ipa = "com cobertura ipa";
 
     return ipa;
-  }
-};
-console.log(selected)
-// função para pegar se quer antecipação por doença
-userAntecipation = function () {
-  // n13 14
-  if (antecipationTogle[13].checked) {
-    return "Não";
   } else {
-    return "Sim";
+    let ipa = "sem cobertura ipa";
+    return ipa;
   }
 };
+console.log(selected);
+// função para pegar se quer antecipação por doença
+
 // função para enviar o orçamento com as informações
 sent.onclick = (_) => {
-  let basicliCover = numberMoney.innerText;
-  let coverLabelDeath = labelDeath.innerText;
+  let basicliCover = `Escolhi a cobertura básica no valor de: ${numberMoney.innerText}`;
+  let coverLabelDeath = labelDeath.checked
+    ? `cobertura em dobro no valor ${labelDeath.innerText}`
+    : "sem cobertura em dobro";
   let profession = showProfession.innerText;
   let userMoney = showMoney.innerText;
-  console.log(
-    ageUser,
-    userGender(),
-    userSmoke(),
-    userMoney,
-    basicliCover,
-    coverLabelDeath,
-    coverIpa()
-    ,profession
-  );
+  let antecipationIllnes = noAntecipation.checked
+    ? `sem antecipação por doença`
+    : `com antecipação por doença`;
+  let medicalSpending = spending.checked
+    ? `sem cobertura para despesas medico-hospitalares`
+    : `com cobertura para despesas medico-hospitalares`;
+  let moreIllnes = coverage1.checked ? `Sem cobertura para doenças graves` : `Sem cobertura para doenças graves`
+  let plainMoney = principalValue.innerText
+  let plainCents = cents.innerText
+  // 18 Masculino Não Fumante   Escolhi a cobertura básica no valor de: 30.000,00 sem cobertura em dobro sem cobertura ipa sem antecipação por doença sem cobertura para despesas medico-hospitalares Sem cobertura para doenças graves 00 00
+  window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=
+  Tenho%20${ ageUser},%20
+  do sexo:%20${ userGender()},%20
+  ${ userSmoke()},%20
+  eu%20trabalho%20como:%20${ profession},%20
+  recebo%20em%20média%20${ userMoney},%20
+  ${ basicliCover},%20
+  ${ coverLabelDeath},%20
+  ${ coverIpa()},%20
+  ${ antecipationIllnes},%20
+  ${ medicalSpending},%20
+  ${ moreIllnes},%20
+  meu orçamento fechou num total de R$%20${ plainMoney},${plainCents}%20 mensais`;
+
 };
 
 // como capturar o valor dos selects
