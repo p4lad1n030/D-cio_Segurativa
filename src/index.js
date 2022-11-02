@@ -26,6 +26,9 @@ const radSex = document.getElementsByName("radSex");
 const radsmok = document.getElementsByName("radsmok");
 const inJob = document.getElementsByName("inJob")[0];
 const monthlyIncome = document.getElementsByName("monthlyIncome")[0];
+const showProfession = document.getElementById("showProfession");
+const showMoney = document.getElementById('showMoney')
+const antecipationTogle = document.getElementById('antecipationTogle')
 
 var age;
 var cover;
@@ -65,7 +68,7 @@ inputs do header
     let nameInput = nameUser.value;
     let emailInput = email.value;
     let phoneInput = phone.value;
-    window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=Olá%20me%20chamo%20${nameInput},%20com%20email:%20${emailInput}%20e%20o%20telefone:%20${phoneInput}%20e%20gostaria%20de%20mais%20detalhes%20do%20seguro%20de%20vida.`;
+    window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=Olá%20me%20chamo%20${nameInput},%20com%20email:%20${emailInput}%20e%20o%20telefone:%20${phoneInput}%20e%20gostaria%20de%20mais%20&shydetalhes%20do%20seguro%20de%20vida.`;
   };
   // ==
   function rangeAge(value) {
@@ -420,25 +423,17 @@ userSmoke = (_) => {
     return "Fumante";
   }
 };
-userJob =  function (e) {
-  console.log(e)
-  return e
-  // let job = e.value;
-  // return job;
+userJob = function (e) {
+  console.log(e);
+  showProfession.innerHTML = e;
+};
+function userMoney(s) {
+  showMoney.innerText = s
 }
-// inJob.addEventListener('change',function(e){
-//   es = e.value
-//   console.log(es)
-//   return es
-// })
-// monthlyIncome.addEventListener("input",function () {
-//    income = this.value
-//   return income
-// })
- monthlyIncome.addEventListener("input",function () {
 
-  return this.value
-})
+// monthlyIncome.addEventListener("input", function () {
+//   return this.value;
+// });
 
 coverIpa = (_) => {
   if (selected[13].checked) {
@@ -447,26 +442,32 @@ coverIpa = (_) => {
     return ipa;
   }
 };
-
+console.log(selected)
+// função para pegar se quer antecipação por doença
+userAntecipation = function () {
+  // n13 14
+  if (antecipationTogle[13].checked) {
+    return "Não";
+  } else {
+    return "Sim";
+  }
+};
 // função para enviar o orçamento com as informações
 sent.onclick = (_) => {
-//   monthlyIncome.addEventListener("input",function () {
-//     income = this.value
-//    return income
-//  })
   let basicliCover = numberMoney.innerText;
-let coverLabelDeath = labelDeath.innerText;
+  let coverLabelDeath = labelDeath.innerText;
+  let profession = showProfession.innerText;
+  let userMoney = showMoney.innerText;
   console.log(
     ageUser,
     userGender(),
-    userSmoke()
-    , monthlyIncome
-    ,basicliCover,
+    userSmoke(),
+    userMoney,
+    basicliCover,
     coverLabelDeath,
     coverIpa()
-    ,userJob()
-    
-  )
+    ,profession
+  );
 };
 
 // como capturar o valor dos selects
