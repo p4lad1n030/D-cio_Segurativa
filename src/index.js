@@ -396,14 +396,15 @@ userSmoke = (_) => {
   if (radsmok[0].checked) {
     return "Não Fumante";
   } else {
-    return "Fumante";
+    return "fumante";
   }
 };
 userJob = function (e) {
   showProfession.innerHTML = e;
+  console.log(profession)
 };
 function userMoney(s) {
-  showMoney.innerText = `minha renda é de : ${s}`;
+  showMoney.innerText = `minha renda é  ${s}`;
 }
 
 
@@ -423,7 +424,7 @@ coverIpa = (_) => {
 // função para enviar o orçamento com as informações
 sent.onclick = (_) => {
   let ageUser = numberAge.innerText
-  let basicliCover = `Escolhi a cobertura básica no valor de: ${numberMoney.innerText}`;
+  let basicliCover = `escolhi a cobertura básica no valor de: ${numberMoney.innerText}`;
   let coverLabelDeath = labelDeath.checked
     ? `cobertura em dobro no valor ${labelDeath.innerText}`
     : "sem cobertura em dobro";
@@ -435,22 +436,22 @@ sent.onclick = (_) => {
   let medicalSpending = spending.checked
     ? `sem cobertura para despesas medico-hospitalares`
     : `com cobertura para despesas medico-hospitalares`;
-  let moreIllnes = coverage1.checked ? `Sem cobertura para doenças graves` : `Sem cobertura para doenças graves`
+  let moreIllnes = coverage1.checked ? `sem cobertura para doenças graves` : `Sem cobertura para doenças graves`
   let plainMoney = principalValue.innerText
   let plainCents = cents.innerText
 
   window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=
-  Tenho%20${ ageUser}%20anos,%20
-  do sexo:%20${ userGender()},%20
-  ${ userSmoke()},%20
-  eu%20trabalho%20como:%20${ profession},%20
-  ${ userMoney},%20
-  ${ basicliCover},%20
-  ${ coverLabelDeath},%20
-  ${ coverIpa()},%20
-  ${ antecipationIllnes},%20
-  ${ medicalSpending},%20
-  ${ moreIllnes},%20
+  Tenho%20${ageUser}%20anos,%20
+  do sexo:%20${userGender()},%20
+  ${userSmoke()},%20
+  eu%20trabalho%20como:%20${profession},%20
+  ${userMoney},%20
+  ${basicliCover},%20
+  ${coverLabelDeath},%20
+  ${coverIpa()},%20
+  ${antecipationIllnes},%20
+  ${medicalSpending},%20
+  ${moreIllnes},%20
   meu orçamento fechou num total de R$%20${ plainMoney},${plainCents}%20 mensais`;
 
 };
