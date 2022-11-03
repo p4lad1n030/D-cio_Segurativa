@@ -46,7 +46,7 @@ var userName;
     let nameInput = nameUser.value;
     let emailInput = email.value;
     let phoneInput = phone.value;
-    window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=Olá%20me%20chamo%20${nameInput},%20com%20email:%20${emailInput}%20e%20o%20telefone:%20${phoneInput}%20e%20gostaria%20de%20mais%20detalhes%20do%20seguro%20de%20vida.`;
+    window.location.href = `https://api.whatsapp.com/send?phone=5597996129485&text=Olá%20me%20chamo%20${nameInput},%20com%20email:%20${emailInput}%20e%20o%20telefone:%20${phoneInput}%20e%20gostaria%20de%20mais%20detalhes%20do%20seguro%20de%20vida.`;
   };
   // ==
   function rangeAge(value) {
@@ -440,7 +440,7 @@ sent.onclick = (_) => {
   let plainMoney = principalValue.innerText
   let plainCents = cents.innerText
 
-  window.location.href = `https://api.whatsapp.com/send?phone=5551985172153&text=
+  window.location.href = `https://api.whatsapp.com/send?phone=5597996129485&text=
   Tenho%20${ageUser}%20anos,%20
   do sexo:%20${userGender()},%20
   ${userSmoke()},%20
